@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery căn bản</title>
+	<meta charset="utf-8">
+	<meta name="author" content="đại phú">
+	<meta name="descoription " content="jquery">
+	<meta name="keyword" content="jquery">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="#; url=#">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="jquery/jquery341.js"></script> <!--ddaay laf file chua ma nguon js dow ve or link trang chu-->
+	<script type="text/javascript" src="jquery/events.js"></script>
+</head>
+<body>
+
+<div>
+	<h1 >tìm hiểu  Events</h1>
+	<h2> .click</h2>
+	<p>Cấu trúc :</p>
+	<p> $(document).ready(function(){ 	$('.events_click').click(function(){  click1 = ('1 vạch'); });</p>
+	<input type="button" class="events_click" value=" 8-3 hậu quả "/><br><br>
+	<p> Hậu quả là : <span class="click1 click2 click3 click4 click5 click6 "></span></p>
+	<form method="post" action="" class="form1-5">
+		<table >
+			<h2>  Focus() </h2>
+			<p>click vào hiện thông báo - focus - </p>
+			<input type="text" name="text-box" placeholder="Ô nhập text " class="focus"><br>
+			<p>Kết quả là:<span class="focus-result"></span></p>
+			<br>
+			<p>focusin()</p>
+			<p>Click vào  hiện ô thẻ span đằng sau rồi mờ dần(có thể chỉnh hiệu ứng trong mục Effects) đi</p>
+			<p class="focusin-p">
+				<input type="text" name="text" class="focusin-text">
+				<span class="focusin" style="display: none;"> nhập text</span>
+			</p>
+
+			<br>
+
+			<h2> Blur() </h2>
+			<p>Gõ xong đưa chuột ra ngoài - blur - </p>
+			<input type="text" name="text-box" placeholder="Ô nhập text " class="blur"><br>
+			<p>Kết quả là:<span class="blur-result"></span></p>
+
+			<h2> Keyup() </h2>
+			<p>Nhấn xuống nhả ra hiện thông báo - keyup - </p>
+			<input type="text" name="text-box" placeholder="Ô nhập text " class="keyup"><br>
+			<p>Kết quả là:<span class="keyup-result"></span></p>
+
+			<h2>  Keydown() </h2>
+			<p>Nhấn xuống hiện thông báo - keydown - </p>
+			<input type="text" name="text-box" placeholder="Ô nhập text " class="keydown"><br>
+			<p>Kết quả là:<span class="keydown-result"></span></p>
+
+			<h2>  Keypress() </h2>
+			<p>Nhấn bao gồm nhấn xuống và nhả ra hiện thông báo - keypress - </p>
+			<input type="text" name="text-box" placeholder="Ô nhập text " class="keypress"><br>
+			<p>Kết quả là:<span class="keypress-result"></span></p>
+
+
+			<h2>Mouse...()</h2>
+			<p><strong> Mousedown() </strong>  </p>
+				<div class="Mousedown">
+				  Click here
+				</div>
+				<p> kết quả : <span class="Mousedown-result"> </span></p>
+			<p><strong> Mouseup() </strong>  </p>
+				<div class="Mouseup">
+				  Kích hoạt
+				</div>
+				<p> kết quả : <span class="Mouseup-result"> </span></p>
+<br>
+
+<p class="Mouse" style="width: 600px; height: 100px;background: 	#6D7B8D; overflow: scroll;">kết quả kết hợp: <span class="Mouse-result"></span></p>
+
+
+
+
+			<p><strong> Mouseenter </strong>  </p>
+				<div class="mouseenter">
+				  Kích hoạt mouseenter() khi di chuyển chuột qua phần tử!
+				</div>
+				<p class="ketqua"> kết quả : <span class="mouseenter-result"> </span></p>
+
+
+<br>
+
+			<p><strong> Mousemove </strong>  </p>
+				<div class="mousemove">
+				  Kích hoạt mousemove() khi di chuyển chuột trong phần tử!
+				</div>
+				<p > kết quả :
+				 <span class="mousemove-result-1"> </span>
+				  ----- 
+				 <span class="mousemove-result-2"> </span>
+
+				</p>
+<br>
+
+			<p><strong> Mouseout </strong>  </p>
+				<div class="mouseout" style="width: 500px; height: 50px; color: blue;">
+				  Kích hoạt mouseout() khi di chuyển chuột qua phần tử!
+				</div>
+				<p class=""> kết quả : <span class="mouseout-result"> </span></p>
+<br>
+
+			<p><strong> .mouseover() </strong>  </p>
+				<div class="mouseover" style="width: 500px; height: 50px; color: blue;">
+				  Kích hoạt mouseover() khi di chuyển chuột qua phần tử!
+				</div>
+				<p class=""> kết quả : <span class="mouseover-result"> </span></p>
+
+
+
+
+<hr>
+		<h2>Hover()</h2>
+		<p class="hover"> hover vào đây! </p>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>On() // Off()</p>
+<p>Hỏi lại cao nhân! :)</p>
+<input type="button" class="delete-all" value="clear all">
+
+<br><br>
+<p>resize()</p>
+<p> kq : <span class="resize-result"></span></p>
+<p> kq : <span class="resize-result1"></span></p>
+<p> kq : <span class="resize-result2"></span></p>
+<p> kq : <span class="resize-result3"></span></p>
+<p> kq : <span class="resize-result4"></span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="http://google.com/"> go to google</a>
+
+
+
+
+
+			<br>
+			<input type="submit" name="submit" class="day1-5" value="submit" placeholder="yes sir">	
+		</table>
+	</form>
+	<div background="gray">
+		<div class="result" >
+			
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

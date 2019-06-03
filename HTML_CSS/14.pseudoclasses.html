@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lag="vi">
+<head>
+	<title> Pseudo-classes Cơ bản trong CSS</title>
+	<meta charset="utf-8" >
+	<meta name="author" content="Đại Phú"/>
+	<meta name="description" content="Pseudo-classes Cơ bản"/>
+	<meta name="keyword" content="Pseudo classes"/>
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
+	<meta http-equiv="refresh" content="#;url=#"/>
+	<link rel="stylesheet" type="text/css" href="css/style-pseudoclasses.css"/>
+</head>
+<body>
+	<h1>Pseudo-classes cơ bản trong css</h1>
+	<p><i><u>Cấu trúc: ID + : + thuộc tính</u></i></p>
+		<h3>:hover </h3>
+		<p id="hover"> khi rê chuột vào nó sẻ hiện ra cái mình muốn</p>
+		
+
+		<h3>:visited </h3>
+		<p id="visited">Đây là link <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank" id="visited-link"> w3school.com</a>. để đổi màu cho link</p>
+
+
+
+
+		<h3>:link</h3>
+		<p id="link">Xem cos gid khacs nhau- gioongs nhuw treen ther goc -: link <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" id="link-link"> 3wschool</a></p>
+
+
+
+		<h3>:active</h3>
+		<p id="active"> Bấm giữ nó sẻ đổi màu:  <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" id="active-link" target="_blank">click vô link w3school</a></p>
+
+<hr>		<h3> input:Checked { }</h3>
+		<p><u>thay đổi kích thước các ô đc chọn vs thẻ checked</u></p>
+		<form action="#" method="post" >
+			<table class="table">
+				<tr>
+					<td><label for="radio1"> Nam</label></td>
+					<td><input type="radio" value="male" name="radio" checked id="radio1"/></td>
+				</tr>
+				<tr>
+					<td><label for="radio2">Nữ</label></td>
+					<td><input type="radio" name="radio" name="radio" id="radio2"/></td>
+				</tr>
+			</table><br>
+			<table class="table">
+				<tr>
+					<td><label for="checkbox"> Nokia</label></td>
+					<td><input  type="checkbox" name="checkbox" id="checkbox" /></td>
+				</tr>
+				<tr>
+					<td><label for="checkbox1"> Motorola </label></td>
+					<td><input  type="checkbox" name="checkbox" id="checkbox1" /></td>
+				</tr>
+				<tr>
+					<td><label for="checkbox2"> LG</label></td>
+					<td><input  type="checkbox" name="checkbox" id="checkbox2" /></td>
+				</tr>
+			</table>
+		</form>
+<hr>
+	<div>
+		<h3>Input: Enabled</h3>
+		<h3>Input: disabled</h3>
+		<h3>thay đổi màu sắc bên trong thẻ input đối vs 2 giá trị khác nhau là <i><u>enabled</u></i> và <i><u>disabled</u></i></h3>
+		<form>
+			User Name: <input type="text"  title="nhập tên" placeholder=" nhập tên" ><br>
+			Password: <input type="password" title="nhập password" placeholder="nhập password"><br>
+			Email:<input type="mail" title="gmail" placeholder="Tên + ngày sinh @gmail.com"/><br>
+			Quốc gia <input type="text " title="Mặc định theo local" value="VietNam" disabled/>
+		</form>
+	</div>
+	<hr>
+	<div>
+		<h3><u>p:emply </u>. chỉ định màu cho thẻ p trống, chưa nhập gì</h3>
+		<p></p>
+		<p>asdasdasdasdas </p>
+		<p></p>
+		<p>ádasdas</p>
+		<p></p>
+	</div>
+	<hr>
+	<div>
+		<h3> . chỉ định màu nền cho thẻ p đầu tiên của 1 thẻ hoặc 1 khối văn bản</h3>
+		<h3><u>p:first-of-type.</u> giống trên nhưng khác là của kiểu sype</h3>
+		<p>grtrthhrthrh</p>
+		<p>rtyrtyrtyrtytry</p>
+		<div>
+			<p>grtrthhrthrh</p>
+			<p>rtyrtyrtyrtytry</p>
+			<div>
+			<p>grtrthhrthrh</p>
+			<p>rtyrtyrtyrtytry</p>
+		</div>
+		</div>
+		<p>aadasdas</p>
+	</div>
+	<hr>
+	<div>
+		<h3><u><i>Input:focus</i></u> Khi chọn vào để nhập văn bản thì nó được đổi màu nền yellow->green</h3>
+		<p>Click inside the text fields to see a yellow background:</p>
+		<form>
+		  First name: <input type="text" name="firstname"><br>
+		  Last name: <input type="text" name="lastname"><br>
+		</form>
+	</div>
+	<hr>
+	<div>
+		<h3><i><u>P:lang(Giá trị)</u></i> Chọn và định kiểu mọi phần tử p có giá trị thuộc tính lang.thẻ p thêm giá trị vd: p lang="giá trị"</h3>
+		<p> già rồi</p>
+		<p lang="cl">Phải cưới!</p>
+		<p>Để lâu </p>
+		<p lang="at"> Là không tốt</p>
+	</div>
+	<hr>
+	<div>
+		<h3><i><u>input:in-range </u></i>trong phạm vi thì chỉ định màu, Ngoài phạm vi chỉ định thì sẻ về màu mặc định, hoặc có thể dung <i><u>input:out-of-range</u></i></h3>
+		<p>chỉ dùng được khi có thuộc tính min max</p>
+		<p> trong này dùng thuộc tính: border : 1px solid màu;</p>
+		<input type="number" min="5" max="10" value="1" >
+
+		<input type="number" min="4" max="10" value="2" >
+
+		<input type="number" min="3" max="10" value="3" >
+
+		<input type="number" min="2" max="10" value="4" >
+
+		<input type="number" min="1" max="10" value="5" >
+
+		<input type="number" min="0" max="10" value="6" >
+
+		
+	</div>
+<hr>
+	<div>
+		<h3> Chỉ định Màu khi <u>sai quy định</u> các thẻ trong input</h3><h3>Cú pháp: input:invalid</h3>
+		<label>NHập Mail:</label>
+		<input type="email" placeholder="abc@gmail.com" value="abcde">
+	</div>
+</body>
+</html>

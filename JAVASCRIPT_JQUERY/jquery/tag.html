@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tag trong Jquery</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Đại Phú">
+	<meta name="description" content="Tag trong Jquery">
+	<meta name="keyword" content="tag Jquery">
+	<meta name="viewport" content="width=device-width, initial-scale=0.1">
+	<meta http-equiv="refresh" content="#, url=#">
+
+
+<!--	<script type="text/javascript" src="js/main.js"></script> -->
+<!--	<script type="text/javascript" src="js/main.min.js"></script> -->
+
+
+	<script type="text/javascript" src="js/jquery/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.easytabs.min.js"></script>
+	<script type="text/javascript" src="Jquery/tab.js"></script>
+	<style type="text/css">
+	a{ color: #000000;
+	text-decoration: none; }
+	.tab-container{
+			width:640px;
+			height: 200px;
+			margin: 20px auto;
+			background-color: #6666;
+		}
+		.tab-title{
+			overflow: hidden;
+		}
+		.tab-title li{
+			list-style:none;
+			float: left;
+			padding: 0 5px;
+			width: 100px;
+			height: 50px;
+			line-height:50px;
+		}
+		.tab-title li a{
+			text-align: center;
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-transform: uppercase;
+
+		}
+		.list-tab{ display: none; }
+		.active-tab{
+			background: #fff;
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Tag trong jquery</h1>
+	<div class="tab-container">
+		<ul class="tab-title">
+			<li><a href="#tab-1">tab-1</a></li>
+		
+			<li><a href="#tab-2">tab-2</a></li>
+	
+			<li><a href="#tab-3">tab-3</a></li>
+	
+			<li><a href="#tab-4">tab-4</a></li>
+		
+			<li><a href="#tab-5">tab-5</a></li>
+		</ul>
+		<div class="tab-content">
+			<div id="tab-1" class="list-tab">
+				<table border="1px">
+					<tr>
+						<th>STT</th>
+						<th>Tên</th>
+						<th>Email</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Chương Nguyễn</td>
+						<td>Chuongnguyen@gmail.com</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Đại Huỳnh</td>
+						<td>Daihuynh@gmail.com</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Văn Quân</td>
+						<td>Vanquan@gmail.com</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Văn Việt</td>
+						<td>Vanviet@gmail.com</td>
+					</tr>
+				</table>
+			</div>
+			<div id="tab-2" class="list-tab"> 
+
+				<table border="1px">
+				<tr>
+				<th>A</th>
+				<th>B</th>
+				</tr>
+				<tr>
+				<td>1</td>
+				<td>5</td>
+				</tr>
+				<tr>
+				<td>9</td>
+				<td>10</td>
+				</tr>
+				</table>
+			</div>
+			<div id="tab-3" class="list-tab"> 
+
+				<table border="1px">
+				<tr>
+				<th>A</th>
+				<td>1</td>
+				<td>3</td>
+				</tr>
+
+				<tr>
+				<th>B</th>
+				<td>2</td>
+				<td>4</td>
+				</tr>
+				</table>
+			</div>
+			<div id="tab-4" class="list-tab"> 
+
+				<table border="1">
+				<tr>
+				<td>Row 1, Column 1</td>
+				<td>Row 1, Column 2</td>
+				</tr>
+				<tr>
+				<td>Row 2, Column 1</td>
+				<td>Row 2, Column 2</td>
+				</tr>
+				</table>
+			</div>
+			<div id="tab-5" class="list-tab"> 
+
+				<table border="1">
+				<tr>
+				<th>Ten nhan vien</th>
+				<th>Luong</th>
+				</tr>
+				<tr>
+				<td>Minh Chinh</td>
+				<td>5000</td>
+				</tr>
+				<tr>
+				<td>Duy Manh</td>
+				<td>7000</td>
+				</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

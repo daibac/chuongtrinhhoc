@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title> Học Javascript </title>
+	<meta charset ="utf-8" />
+	<meta name="author" content="Dại Phú" />
+	<meta name="description" content=" học Javascript" />
+	<meta name="keywords" content=" Javascript " />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="refresh" content="#;url=#" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<scrip type="text/javascript" src="js/js.js"></scrip>
+</head>
+<body>
+	<h1 class="text-center">Javascript</h1>
+
+	
+	<div>
+		<h2>1. Javascript là gì?</h2>
+			<p>Javascript là một ngôn ngữ lập trình kịch bản dựa vào đối tượng phát triển có sẵn hoặc tự định nghĩa ra, javascript được sử dụng rộng rãi trong các ứng dụng Website. Javascript được hỗ trợ hầu như trên tất cả các trình duyệt như Firefox, Chrome, ... thậm chí các trình duyệt trên thiết bị di động cũng có hỗ trợ.</p>
+
+			<p>Nếu bạn đã biết qua về HTML5 thì bạn thấy có các khái niệm như sessionStore hay localStore, đây là hai đối tượng được tạo nên từ Javascript nên rõ ràng trong HTML5 cũng có sử dụng nó. Với những ứng dụng đó thì bạn thấy javascript không thể chết trong các ứng dụng website được.</p>
+
+			<p>Hay thậm chí có những ứng dụng Webgame người ta sử dụng javascript để xử lý các thao tác trên Client, nếu không có nó thì thông thường chọn Flash để xây dựng nhưng lại gặp vấn đề load chậm nên có một số người chọn Javascript để làm.</p>
+		<h2>2. Các thư viện Javascript đình đám hiện nay</h2>
+			<p>Những ứng dụng to lớn của Javascript khiến người ta không thể quên nó được. Hiện nay có rất nhiều libraries và framework được viết từ Javascript như:</p>
+
+			<p>AngularJS: Một thư viện dùng để xây dựng ứng dụng Single Page<br>
+			NodeJS: Một thư viện được phát triển phía Server dùng để xây dựng ứng dụng realtime<br>
+			Sencha Touch: Một Framework  dùng để xây dựng ứng dụng Mobile<br>
+			ExtJS: Một Framework dùng xây dựng ứng dụng quản lý (Web Applications)<br>
+			jQuery: Một thư viện rất mạnh về hiểu ứng<br>
+			ReactJS: Một thư viện viết ứng dụng mobie<br>
+			Và còn nhiều thư viện khác</p>
+		<h2>3. Viết chương trình javascript đầu tiên</h2>
+			<p>	Bước đầu tiên để học Javascript là bạn phải chuẩn bị một phần mềm để viết mã Javascript, mình thì thích dùng Netbeans nhưng nếu bạn là người mới thì nên sử dụng Notepad++ vì nó rất nhẹ và dễ cài đặt.</p>
+
+			<p>Qua khái niệm javascript là gì? thì bạn thấy tất cả các trình duyệt đều hỗ trợ nên ta không cần phải download thư viện gì cả mà thông qua những đoạn mã script giúp trình duyệt nhận diện được đó là Javascript.</p>
+			<p>Cặp thẻ mở và thẻ đóng</p>
+			<p>Tất cả những đoạn mã Javascript đều phải đặt trong cặp thẻ mở < script > và thẻ đóng < / script ></p>
+			<p>Đặt thẻ script ở đâu?</p>
+			<p>Chúng ta có ba cách đặt thường được sử dụng sau đây:</p>
+			<h4>Cách 1: Internal - viết trong file html hiện tại</h4>
+
+			<p>Thông thường chúng ta sẽ viết những đoạn mã javascript trên phần head, tuy nhiên đó không phải là điều kiện bắt buộc, nghĩa là bạn có thể đặt ở đâu tùy thích miễn là những đoạn mã đó phải được bao lại bằng thẻ script.</p>
+			    <pre>
+	< body>
+
+    	< script language="javascript" >
+
+        	alert("Hello World!");
+
+    	< /script>
+
+	< /body>
+		   </pre>
+		   <h4>Cách 2: Inline  - viết trực tiếp trong thẻ HTML</h4>
+			<p>Inline nghĩa là bạn sẽ viết những đoạn mã Javascript trực tiếp trong thẻ HTML luôn. Như ví dụ dưới đây là mình đang viết dạng inline vì đoạn mã alert(1) được đặt trong sự kiện onclick của thẻ button.</p>
+			<p>ví dụ : < input type="button" onclick="alert(1)" value="Click Me"/> <input type="button" onclick="alert(1)" value="Click Me"/> </p>
+			<h4>Cách 3 : External - viết ra một file js khác rồi import vào</h4>
+			<p>Bạn có thể viết những đoạn mã javascript ở một file có phần mở rộng là .js nằm trong thư mục js, sau đó dùng thẻ script để import vào (giống CSS vậy). Ví dụ file JS của mình có tên là demo.js thì lúc này mình import vào như sau:</p>
+			<p>< script language="javascript" src="js/demo.js"> </script> <script language="javascript" src="js/demo.js"></script> </p>
+			<p>Lúc này bên trong file demo.js bạn không đặt thẻ scirpt nữa nhé vì nó là file có phần đuôi là .js rồi nên trình duyệt tự nhận diện đây là file chứa mã Javascript. </p>
+			<h2>Viết chương trình Hello World!</h2>
+			<p>Bước 1 : Tạo một file "index.html  "và lưu tại bất kì vị trí nào, desktop hay ổ D, ổ C gì đó thì tùy bạn, miễn là phần mở rộng là " .html ".</p>
+			<p>Bước 2 :  Thêm đoạn mã :</p>
+			<pre>
+			< script >
+
+			     document.write (" hello everybody")
+
+			< /script>
+			</pre>  
+
+			Save lại, vào mở bằng trình duyệt để xem.	
+			<div>
+				<h2 class="text-center"> Liên kết</h2>
+				<a href="1.tongquan/1001.html"> Tổng quan Javascript</a><br>
+				<a href="2.bien/1002.html"> Tổng quan Biến trong Javascript</a><br>
+				<a href="3.ham/index.html"> Tổng quan Hàm trong Javascript</a><br>
+				<a href="3.ham/1.ham-nhieu-tham-so.html"> Hàm nhiều tham số</a><br>
+				<a href="3.ham/2.returnHam.html"> Return hàm</a><br>
+				<a href="3.ham/3.cucbo-toancuc.html"> Biến cục bộ - biến toàn cục</a><br>
+				<a href="4.toantu/toantu.html"> Toán tử</a><br>
+				<a href="4.toantu/1.ttsohoc.html"> Toán tử số học</a><br>
+				<a href="4.toantu/2.ttsosanh.html"> Toán tử so sánh</a><br>
+				<a href="4.toantu/3.ttdk.html"> Toán tử điều kiện</a><br>
+			</div>
+	</div>
+</body>
+</html>

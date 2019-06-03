@@ -1,0 +1,230 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body {
+	font-size: 14px;
+	color:#000;
+}
+
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+
+}
+.text-center {
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.clearfix:before, .clearfix:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.title{
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+.section1{
+
+}
+
+
+.menu-top {
+	background: gray;
+	width: 100%;
+	height: auto;
+	text-align: left;	
+}
+.menu-top ul {
+}
+.menu-top > ul > li{
+	border-right: 1px solid #fff;
+	display: inline-table;
+	position:relative;
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+}
+.menu-top ul li a{
+	color: #fff;
+	text-transform: uppercase;
+}
+.menu-top ul li:hover{
+
+	background: #999999;
+}
+.menu-top ul li ul li:hover{
+	background: #999999;
+
+}
+.menu-top ul li:hover a{
+	color: #F8F8FF;
+}
+
+
+
+.menu-top ul li .sub-menu{
+	display: none;
+	position: absolute;
+	background: gray;
+	text-align: left;
+	width: 150px;	
+	text-indent: 20px;
+	top: auto;
+	left: 0;
+	z-index: 9;
+}
+.menu-top ul li:hover .sub-menu{
+	display: block;
+	border: none;
+
+}
+
+
+
+
+.section2{}
+.section2 .banner img{
+	padding: 1px 0;
+	width: 100%;
+	height: 350px;
+}
+
+
+.main{}
+.main .main-1 {}
+.main .main-1  .vidu-1{
+	border: 1px solid;
+	width: 500px;
+	height: 225px;
+	max-width: 960px;
+	min-width: 200px;
+	max-height: 400px;
+	overflow: auto;
+	resize: both;
+}
+.main .main-1  .vidu-2{
+	border: 1px solid;
+	width: 700px;
+	max-width: 960px;
+	min-width: 200px;
+	max-height: 200px;
+	height: 120px;
+	overflow: auto;
+	resize: horizontal;
+}
+
+
+
+.main .main-1  .vidu-3 .outline{
+	background: #cacaca;
+	display: block;
+    margin: 20px;
+    padding: 10px;
+    width: 350px; 
+    height: 100px;
+    border: 5px solid red;
+    outline: 5px solid green;
+    outline-offset: 15px;
+
+         
+}
+
+
+.background-attac{
+	background-image:url('https://u01.appmifile.com/images/2018/08/13/8f87b5c9-157b-4010-af13-73eaf4315f85.jpg');         
+     background-repeat:repeat-x;
+     background-position: center;
+     background-attachment: fixed;
+}
+
+
+
+.img-li{
+	list-style-image: url('../image/dot.jpg');
+}
+
+
+
+.print-page{
+	page-break-after: avoid;
+}
+.before p:before {
+	content: url(../image/dot.jpg);
+}
+.after p:after {
+	content: url(../image/dot.jpg);	
+}
+
+
+
+
+.vidu-8 {}
+.vidu-8 .first-line p::first-line {
+color:#fff;
+background: gray;
+}
+
+.vidu-9 p:first-letter{
+	font-size: 50px;
+}
+
+
+
+
+.vidu-10{
+}
+
+:lang(vn) { quotes:"<" ">" ;}
+:lang(us) { quotes:"*" "*" ;}
+:lang(fr) { quotes:"@" "?" ;}
+
+
+
+
+
+.vidu-11 a{
+	color: red;
+}
+.vidu-11 a:hover{
+	background: gray;
+	color: #fff;
+}
+
+
+
+.vidu-12 {
+}
+
+.vidu-12 .vidu-12-1	a:link { color: orange; }          /* màu link */
+.vidu-12 .vidu-12-1 a:hover { background: red; color: #fff; }  /* khi rê chuột vào */
+.vidu-12 .vidu-12-1 a:visited { color: #c1aa00; background: green; }     /* Đổi màu sau khi click vào link, những link đã click sẻ khác màu */<br>
+.vidu-12 .vidu-12-1 a:active { color: #fff; background: #DDDDDD; }         /* Khi nhấn giữ  */
+.vidu-12 .vidu-12-1 p:active { background: gray; color:#fff; }   /* Khi nhấn giữ đoạn văn bản thì đổi màu nền */
+
+
+
+.vidu-13 .vidu-13-1 a:visited { color: #c1aa00; background: green; }
+.vidu-13 .vidu-13-1 a:focus {color: red;}  /* Nhấn giữ và rê chuột thì đổi màu, khi nào click chuột lại thì mới mất */
+
+
+
+
+.vidu-14 .vidu-14-1 p:first-child {
+            text-indent: 55px;
+         }

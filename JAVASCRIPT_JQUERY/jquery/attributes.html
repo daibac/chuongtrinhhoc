@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery căn bản</title>
+	<meta charset="utf-8">
+	<meta name="author" content="đại phú">
+	<meta name="descoription " content="jquery">
+	<meta name="keyword" content="jquery">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="#; url=#">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="jquery/jquery341.js"></script> <!--ddaay laf file chua ma nguon js dow ve or link trang chu-->
+	<script type="text/javascript" src="jquery/attributes.js"></script>
+</head>
+<body>
+
+<div>
+	<h1 >tìm hiểu  attributes</h1>
+	<h2>.val()</h2>
+	<p>Để thay đổi giá trị của phần tử value</p>
+	<h2>.attr()</h2>
+	<p>Để thêm giá trị cho phần tử </p>
+	<input type="text" name="text" class="text" value="nhập text">
+	<input type="submit" name="submit" class="submit" >
+	<p>Show data trong phần attr mới thêm</p>
+	<P>Các giá trị được thêm vào : <span class="show"></span></P>
+</div>
+<div>
+	<h2>.hasClass()</h2>
+	<p>Kiểm tra xem trong id hay class chỉ định có class vs tên này k?</p>
+	<h2>.removeClass()</h2>
+	<p>Xóa class nếu có tên trùng vs tên khai báo</p>
+	<h2>.addClass()</h2>
+	<p>Thêm class mới vào.</p>
+	Ví dụ :<br>
+	<input type="text" name="text-box" value="Nhập text vào đây" class="text-box">
+	<input type="submit" name="submit" value="submit" class="submit-box">
+</div>
+<div>
+	<h2>Kết hợp .hasClass() .removeClass() và .addClass()</h2>
+	<h2> Hoặc sử đụng hàm mới của jquery : toggleClass() < nhanh hơn rút ngắn time code></h2>
+	<p>Để tạo ra menu đóng mở</p> 
+	 <p> Ví dụ 1 :</p><br>
+	<input type="text" name="text-box" value="Nhập text vào đây" class="text-box-1">
+	<input type="submit" name="submit" value="submit" class="submit-box-1">
+	<p> Ví dụ 2 :</p>
+		<ul class="ul">
+			<li>Bấm váo đây 1</li>
+			<li>Bấm váo đây 2</li>
+			<li class="click-here"><b><i>Bấm váo đây </i></b> 3
+				<ul class="sub-menu hidden">
+					<li>3.1</li>
+					<li>3.2</li>
+					<li>3.3</li>
+				</ul>
+			</li>
+			<li>Bấm váo đây 4</li>
+			<li>Bấm váo đây 5</li>
+		</ul>
+</div>
+<div>
+	<h2> .prop()</h2>
+	<p>Kt thuộc tính o thẻ html có tồn tại k? thiết lập thuộc tính cho thẻ html nào đó (nguyên tác giống attr nhưng khác nhau)</p>
+	<p>prop() không thể đc xem thấy trên inspec của trình duyêt, nó lưu tamk thời và được <i> ẩn đi </i> </p><br>
+	<input type="checkbox" name="checkbox" value="checkbox" class="checkbox">
+	<input type="button" name="button" value="button" class="button"><br><br>
+	<input type="checkbox" name="checkbox" value="checkbox" class="checkbox1">
+	<input type="button" name="button" value="button" class="button1">
+
+
+</div>
+
+
+
+</body>
+</html>

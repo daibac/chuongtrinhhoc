@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title> Break và continue trong Vòng lặp</title>
+	<meta charset ="utf-8" />
+	<meta name="author" content="Dại Phú" />
+	<meta name="description" content=" học Javascript" />
+	<meta name="keywords" content=" Javascript " />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="refresh" content="#;url=#" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<scrip type="text/javascript" src="js/js.js"></scrip>
+</head>
+<body>
+	<h1>Break và continue trong Vòng lặp</h1>
+	<h2><a href="../index.html" title="javascript" alt="javascript"> trang Javascript</a></h2>
+	<h3>Break : Có chức năng thoát khỏi 1 vong lệnh.Nó có thể sự đụng để nhảy ra khoiỉ 1 vòng lặp.</h3>
+	<h3>Continue : Có chức năng dừng vòng lặp tịa giá trị đó và nhảy sang giá trị khác trong vòng lặp,</h3>
+	<h4> Break </h4>
+	<p>VD : ngat vong lap taij gia trij 11, du ng dung co nhap bn di nua! </p>
+	 <script type="text/javascript">
+	 var i;
+	 var number=20;
+	 	document.write("Nguoi dung nhap vao : " + number + "<br>")
+	 	document.write("Ct xu ly toi da 11 vi dk la 11 se Break " + "<br>");
+	 for (i= 0; i < number; i+=1){
+	 	if(i == 11) break;
+	 	document.write(i + "<br>")
+	 	}
+	 </script>
+	 <h4> Continue :  </h4>
+	<p>VD :  In gia tri tu 0 - 20 va k in cac gia tri <b><i><u>  3 7 15 </u></i></b></p>
+	 <script type="text/javascript">
+	 var i;
+	 var number=20;
+	 	document.write("Nguoi dung nhap vao : " + number + "<br>")
+	 for (i= 0; i < number; i+=1){
+	 	if(i==3 || i==7 || i==15) continue ;
+	 	document.write(i + "<br>")
+	 	}
+	 </script>
+
+
+
+</body>
+</html>

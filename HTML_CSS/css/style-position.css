@@ -1,0 +1,36 @@
+body {
+	width:960px;
+	height: auto;
+	margin: 0 auto;
+	background-color: #c4c4c4;
+}
+.container {
+	width:500px;
+	border: 1px solid red;
+	background-color: #806D7E;
+	margin: 0 auto;
+	position: relative;
+}
+#image {
+	position:static;
+}
+ #image0 {
+ 	position : relative;
+ 	right: 120px;
+ 	top: 100px;
+ }
+ #image1 {
+ 	position : absolute;
+ 	left:100px;
+ 	top: 300px;
+ }
+ #vanban {
+ 	position:relative;
+ 	z-index: 50;
+ }
+ #image2 {
+ 	position : fixed;
+ 	top:150px;
+ 	left :50px;
+ 	z-index:100;
+ }

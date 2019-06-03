@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tổng Hợp</title>
+	<link rel="stylesheet" type="text/css" href="css/total.css">
+</head>
+<body>
+<h2>Tổng Hợp</h2>
+<div class="container">
+	<h4>Tất cả các định danh JavaScript đều phân biệt chữ hoa chữ thường . </h4>
+<p class="title_1">getElementById(abc):</p>
+<p>Tìm phần tử với id abc</p><br>
+
+<p class="title_1">.innerHTML = ' nội dung '</p>
+<p>Thay đổi nội dung phần tử</p><br>
+
+<p class="title_1">.style.thuộc tính</p>
+<p>Chỉ được thay đổi 1 thuộc tình vd: .style.color='red' / .style.fontSize='35px' / ....</p><br>
+
+<p class="title_1">.style.display = "none / block / inline /.....";</p>
+<p>Dùng để ẩn  / hiện phần tử</p><br>
+
+<p class="title_1">.src='liên kết'</p>
+<p>áp dụng chủ yếu với link ảnh</p><br>
+
+<p class="title_1">document.write().</p>
+<p>In ra màn hình -  </p>
+<p>Note :  </p>
+<p>Note : chỉ nên được sử dụng để thử nghiệm. -- Sử dụng document.write () sau khi tài liệu HTML được tải, sẽ xóa tất cả HTML hiện có : --</p><br>
+
+<p class="title_1">window.alert()</p>
+<p>Hiển thì cửa sổ popup màn hình </p><br>
+
+<p class="title_1">console.log()</p>
+<p>Hiển thị lỗi trong phần console tren đê bớt </p><br>
+
+<p class="title_1">Khai Báo Biến</p>
+<p>Var tên biến = nội dung ;</p>
+<p>Nhiều biến có thể viết liền:<br>
+Var bien1 = 1, bien2 = 2, bien3 = 'bien3';
+</p>
+<p>Dấu ; dùng để viết nhiều câu lệnh trên 1 dòng vd: 
+<br>var a, b, c;
+<br>a = 5; b = 6; c = a + b;</p><br>
+
+<p>Nên Ngắt dòng sau 1 toán tử , trong toán tử khoảng trắng không ảnh hưởng</p><br>
+
+<p class="title_1">1 Function có thể chứa 1 hoặc nhiều khối mã ngăn cách bằng dấu ;</p><br>
+
+<img src="images/ttsohoc.jpg"><br>
+
+<p>Toán tử số học ( + - * /) để tính toán các giá trị:</p><br>
+
+<p>Toán tử gán ( =) để gán</p><br>
+
+
+<code>
+	<pre>
+	Các quy tắc chung để xây dựng tên cho các biến (định danh duy nhất) là:
+
+		Tên có thể chứa chữ cái, chữ số, dấu gạch dưới và ký hiệu đô la.
+		Tên phải bắt đầu bằng một chữ cái
+		Tên cũng có thể bắt đầu bằng $ và _ (nhưng chúng tôi sẽ không sử dụng nó trong hướng dẫn này)
+		Tên có phân biệt chữ hoa chữ thường (y và Y là các biến khác nhau)
+		Các từ dành riêng (như từ khóa JavaScript) không thể được sử dụng làm tên
+	Mã định danh JavaScript phân biệt chữ hoa chữ thường.
+	</pre>
+</code><br>
+
+<p>var x = "5" + 2 + 3; =====>523</p>
+<p>Nếu bạn đặt một số trong dấu ngoặc kép, phần còn lại của các số sẽ được coi là chuỗi và nối.</p><br>
+
+<p>Có thể dùng += để nối chuổi</p>
+
+<p>txt1 = "What a very ";</p>
+<p>txt1 += "nice day";</p><br>
+
+<p>x ** y tạo ra kết quả tương tự như Math.pow(x,y):</p><br>
+
+<p>x *= 5; ==> x = x * 5</p><br>
+
+<p class="title_1">onclick="hàm / sự kiện"</p><br>
+
+<p>This  . . . . Ngay tại phàn tử mình đang thao tác</p>
+<button onclick="this.innerHTML=Date()">The time is?</button><br>
+
+<p class="title_1">Onchange=""</p>
+<select id="mySelect" onchange="onchange1()">
+  <option value="Audi">Audi</option>
+  <option value="BMW">BMW</option>
+  <option value="Mercedes">Mercedes</option>
+  <option value="Volvo">Volvo</option>
+</select>
+<p id="demo-onchange">Bạn chọn loại xe nào?</p><br>
+
+
+	<script>
+	function onchange1() {
+	  var x = document.getElementById("mySelect").value;
+	  document.getElementById("demo-onchange").innerHTML = "Bạn chọn :  " + x;
+	}	</script>
+
+<p>
+	Nhập tên -> chử hoa: <input type="text" id="fname" onchange="myFunction()">
+
+<script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}	</script>
+</p><br>
+
+<p class="title_1" >length</p>
+<p>Để tìm độ dài của chuỗi, sử dụng thuộc length tính tích hợp:</p>
+
+		<p id="demo-length"></p>
+		<p id="demo-length-1"></p>
+
+		<script>
+		var txt = "123456789123456789123456789";
+		document.getElementById("demo-length").innerHTML = txt;
+		document.getElementById("demo-length-1").innerHTML = txt.length;		</script><br>
+
+<p class="title_1">Thêm các ký tự '' "" \ vào javascrip</p>
+		<p id="demo1221"></p>
+		<p id="demo1331"></p>
+		<p id="demo1441"></p>
+		<script>
+		var x = 'It\'s alright.';
+			document.getElementById("demo1221").innerHTML = x; 
+		var y = "We are the so-called \"Vikings\" from the north.";
+			document.getElementById("demo1331").innerHTML = y; 
+		var z = "The character \\ is called backslash.";
+			document.getElementById("demo1441").innerHTML = z; 		</script><br>
+<p class="title_1">Đặc biệt trong javascript</p>
+<p>\n : xuống dòng </p>
+<p>\f : kí tự phân trang</p>
+<p>\t : 1 tab</p>
+<p>\b :  kí tự biên</p>
+<p>\r : kí tự quay đầu dòng</p>
+<p>\v : kí tự vertical tab (U+000B).</p><br>
+
+<p class="title_1">str.slice()</p>
+<p>trích xuất một phần của chuỗi và trả về phần được trích xuất trong chuỗi mới. Phương thức này có 2 tham số: vị trí bắt đầu và vị trí kết thúc</p>
+	Vi dụ :
+		<p id="demoslice1"></p>
+		<p id="demoslice"></p>
+
+			<script>
+			var str = "Apple, Banana, Kiwi";
+			var res = str.slice(4,18);
+			document.getElementById("demoslice1").innerHTML = str;
+			document.getElementById("demoslice").innerHTML = res; 			</script><br>
+
+<p  class="title_1">str.replace</p>
+			<button onclick="replace123()">Try it</button>
+			<p>Microsoft ===> W3Schools</p>
+			<p id="replace12">Please visit Microsoft and  Microsoft Microsoft Microsoft Microsoft Microsoft Microsoft Microsoft Microsoft !</p>
+
+			<script>
+			function replace123() {
+			  var str = document.getElementById("replace12").innerHTML; 
+			  var txt = str.replace("Microsoft","W3Schools");
+			  document.getElementById("replace12").innerHTML = txt;
+			}			</script> <br>
+<p  class="title_1">Chuyển đổi sang chữ hoa</p>
+			<p>.toUpperCase();</p><br>
+<p  class="title_1">Chuyển đổi sang chữ thường</p>
+			<p>.toLowerCase()</p><br>
+<p  class="title_1">Trả về vị trí của phần tử trong một chuỗi:</p>
+			<p id="demo1551"></p>
+			<p id="demo1552"></p>
+			<script>
+			var str = "HELLO WORLD";
+			document.getElementById("demo1551").innerHTML = str;
+			document.getElementById("demo1552").innerHTML = str.charAt(1);		</script><br>
+<p  class="title_1">.toFixed()</p>
+<p> làm tròn số thập phân</p>
+			<p id="demo1661"></p>
+
+			<script>
+			var x = 9.656;
+			document.getElementById("demo1661").innerHTML =
+			  'x =' + x + "<br>" +
+			 'x.toFixed(0) ' +  x.toFixed(0) + "<br>" +
+			 'x.toFixed(2) ' +  x.toFixed(2) + "<br>" +
+			 'x.toFixed(4) ' +  x.toFixed(4) + "<br>" +
+			 'x.toFixed(6) ' +  x.toFixed(6);		</script><br>
+<p class="title_1">.toPrecision()</p>
+<p>làm tròn số theo số tính cả phần phập phân và số nguyên</p>
+			<p id="demo1771"></p>
+
+			<script>
+			var x = 9.656;
+			document.getElementById("demo1771").innerHTML = 
+			'x = ' + x + '<br>' +
+			'x.toPrecision() ' +  x.toPrecision() + "<br>" +
+			'x.toPrecision(2) ' +  x.toPrecision(2) + "<br>" +
+			'x.toPrecision(4) ' +  x.toPrecision(4) + "<br>" +
+			'x.toPrecision(6) ' +  x.toPrecision(6); 	</script><br>
+<p  class="title_1">Mảng</p>
+<p>	Cú pháp: var array_name = [item1, item2, ...];      </p>
+<p>Truy cập các phần tử của một mảng</p>
+<p>1 . Số thứ tự: bắt đầu từ 0 vd: cars[0]; Là lấy phần tử đầu tiên</p>
+<p>2 . Truy cập theo tên </p>
+<p>ví dụ: person = {firstName:"John", lastName:"Doe", age:46};</p>
+<p>person["firstName"]; Hiển thị là John </p><br>
+<p class="title_1">Thay đổi một phần tử mảng</p>
+<p>var cars = ["Saab", "Volvo", "BMW"];<br>
+cars[0] = "Opel";</p><br>
+<p class="title_1">Thêm các phần tử mảng</p>
+<p>push()
+
+	<pre>
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.push("Lemon");</pre>
+	unshift(); cũng thêm phần tử vào mảng.
+</p><br>
+<p class="title_1">Truy cập phần tử mảng đầu tiên</p>
+		<pre>
+		fruits = ["Banana", "Orange", "Apple", "Mango"];
+		var first = fruits[0];		</pre><br>
+
+<p class="title_1">Truy cập phần tử mảng cuối cùng</p>
+		<pre>
+		fruits = ["Banana", "Orange", "Apple", "Mango"];
+		var last = fruits[fruits.length - 1];		</pre><br>
+<p class="title_1">Thêm menu bằng mảng
+	<p> Cách 1 dùng vong lặp for
+			<p id="demo1881"></p>
+			<script>
+			var fruits, text, fLen, i;
+			fruits = ["Banana", "Orange", "Apple", "Mango"];
+			fLen = fruits.length;
+
+			text = "<ul>";
+			for (i = 0; i < fLen; i++) {
+			  text += "<li>" + fruits[i] + "</li>";
+			}		text += "</ul>";
+
+			document.getElementById("demo1881").innerHTML = text; </script>
+	</p>
+	<p>Cách 2 dung .forEach(hàm)
+		<p id="demo1991"></p>
+			<script>
+			var fruits, text;
+			fruits = ["Banana", "Orange", "Apple", "Mango"];
+			text = "<ul>";
+			fruits.forEach(my1991);
+			text += "</ul>";
+			document.getElementById("demo1991").innerHTML = text;
+			function my1991(value) {
+			  text += "<li>" + value + "</li>";
+			} </script>
+	</p>
+
+</p><br>
+<p class="title_1">Chuyển đổi mảng sang chuỗi</p>
+<p>.toString()</p>
+<p>.join(" * "); có thể thay đổi dấu , thành dấu trong( )</p><br>
+<p class="title_1"> .pop(); Loại bỏ yếu tố cuối cùng của mảng nào đó  </p>
+<pre>
+	vd: var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	fruits.pop(); </pre>
+<p class="title_1">  shift ();Loại bỏ yếu tố đầu tiên của mảng nào đó (thực hiện giống ,pop() ) </p><br>
+<p  class="title_1">Sắp xếp một mảng</p>
+<p>1  .sort();  theo thứ tự abc:</p>
+<p>2  .reverse(); đảo ngược yếu tố trong mảng a,s,d,f => f,d,s,a</p>
+
+<p  class="title_1">Sắp xếp SỐ trong mảng < trong mảng nếu dùng sort thì 20 lớn hơn 100 nên k dùng đc  ></p>
+<p>DÙng thêm chức năng so sánh</p>
+<p>Tăng dần<br>
+	.sort(function(a, b){return a - b});<br>
+	Giảm Dần<br>
+	.sort(function(a, b){return b - a});
+</p><br>
+<p  class="title_1">Hàm so sánh</p>
+<p>Mục đích của chức năng so sánh là xác định thứ tự sắp xếp thay thế.</p><br>
+<p class="title_1">Sắp xếp một mảng theo thứ tự ngẫu nhiên</p>
+<p>Mục đích của chức năng so sánh là xác định thứ tự sắp xếp thay thế.</p><br>
+<p class="title_1">Tìm giá trị mảng cao nhất (hoặc thấp nhất)</p>
+<p>
+	<pre>
+	< p>The highest number is < span id="demo"></ span>.</ p>
+	< script>
+	var points = [40, 100, 1, 5, 25, 10];
+	document.getElementById("demo").innerHTML = zxc(points);
+	function zxc(arr) {
+	  return Math.max.apply(null, arr);                ///// thay thành min nếu mốn nhỏ nhất
+	}
+	</pre>
+</p><br>
+<p class="title_1">.map()</p>
+<p> Tạo ra một mảng mới bằng cách thực hiện một chức năng trên mỗi phần tử mảng.</p>
+<pre>Ví Dụ : mỗi phần tử đc nhân 2 rồi thêm vào màn hình 
+		< p id="demo"></ p>
+		< script>
+		var numbers1 = [45, 4, 9, 16, 25];
+		var numbers2 = numbers1.map(myFunction);
+
+		document.getElementById("demo").innerHTML = numbers2;
+
+		function myFunction(value) {
+		  return value * 2;
+		}< /script>
+</pre><br>
+
+
+<p class="title_1">.filter(()</p>
+<p> một mảng mới từ các phần tử có giá trị < /> / = .... số nào đó </p>
+<pre>Ví Dụ : hiển thị các số lớn hơn 18
+		< p id="demo"></p>
+		< script>
+		var numbers = [45, 4, 9, 16, 25];
+		var over18 = numbers.filter(myFunction);
+
+		document.getElementById("demo").innerHTML = over18;
+
+		function myFunction(value) {
+		  return value > 18;
+		}< /script>
+</pre><br>
+
+<p class="title_1">.reduce ()</p>
+<p> điều hành một chức năng trên mỗi phần tử mảng sản xuất (giảm nó để) một giá trị duy nhất.</p>
+<pre>Ví Dụ : 
+		< p id="demo"></ p>
+		< script>
+		var numbers = [45, 4, 9, 16, 25];
+		var sum = numbers.reduce(myFunction);
+
+		document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+		function myFunction(total, value) {
+		  return total + value;
+		}< /script>
+</pre><br>
+
+<p class="title_1">.every()</p>
+<p> Kt mảng đó có < /> ... gì đó không.</p>
+<pre>Ví Dụ : 
+		< p id="demo"></ p>
+		< script>
+		var numbers = [45, 4, 9, 16, 25];
+		var allOver18 = numbers.every(myFunction);
+
+		document.getElementById("demo").innerHTML = "All over 18 is " + allOver18;
+
+		function myFunction(value) {
+		  return value > 18;
+		}</ script>
+</pre><br>
+
+
+
+<p class="title_1">.find()</p>
+<p> Kt mảng thỏa mãn dk , số đầu tiên tìm đc thì thực hiện k tim tiếp nữa.</p>
+<pre>Ví Dụ : 
+		< p id="demo"></ p>
+		< script>
+		var numbers = [4, 9, 16, 25, 29];
+		var first = numbers.find(myFunction);
+
+		document.getElementById("demo").innerHTML = "First number over 18 is " + first;
+
+		function myFunction(value, index, array) {
+		  return value > 18;
+		}< /script>
+</pre><br>
+
+
+<p class="title_1">.findIndex()</p>
+<p> Giống find() nhưng ở đây tìm vị trí  , 1, 2, .....</p>
+<pre>Ví Dụ : 
+		< p id="demo"></ p>
+		< script>
+		var numbers = [45, 4, 9, 16, 25];
+		var allOver18 = numbers.every(myFunction);
+
+		document.getElementById("demo").innerHTML = "All over 18 is " + allOver18;
+
+		function myFunction(value) {
+		  return value > 18;
+		}
+		</ script>
+</pre><br>
+<p class="title_1"> .date()</p>
+	<pre>
+	< p id="demo"></p>
+	< script>
+	var d = new Date();
+	document.getElementById("demo").innerHTML = d.toDateString();   ///thêm toDateString() để hiển thị dang string dể đọc hơn.
+	< /script>
+
+	</pre><br>
+
+<p class="title_1"> Đối tượng toán học JavaScript</p>
+<p><strong>Math.round()</strong></p>
+<pre>
+	Ví dụ : làm tròn lên 6 
+	var x = 5.55556
+	document.getElementById("demo").innerHTML = Math.round(x); 
+</pre><br>
+
+<p><strong>Math.pow()</strong></p>
+<pre>
+	Ví dụ : Lũy thừ 3 của 6 
+	document.getElementById("demo").innerHTML = Math.pơ(6,3); /// return 216
+</pre><br>
+
+<p><strong>Math.sqrt(x)</strong></p>
+<pre>
+	Ví dụ : trả về căn bậc hai của x: 
+	document.getElementById("demo").innerHTML = Math.sqrt(64);      // returns 8
+</pre><br>
+
+<p><strong>Math.abs(x)</strong></p>
+<pre>
+	Ví dụ : trả về giá trị tuyệt đối (dương) của x: 
+	document.getElementById("demo").innerHTML = Math.abs(-4.7);     // returns 4.7
+</pre><br>
+
+<p><strong>Math.ceil(x)</strong></p>
+<pre>
+	Ví dụ : trả về giá trị của x làm tròn <u> lên </u> đến số nguyên gần nhất của nó:
+	document.getElementById("demo").innerHTML = Math.ceil(4.4);     // returns 5
+</pre><br>
+
+<p><strong>Math.floor(x)</strong></p>
+<pre>
+	Ví dụ : trả về giá trị của x được làm tròn <u> xuống </u> số nguyên gần nhất của nó:
+	document.getElementById("demo").innerHTML = Math.ceil(4.4);     // returns 5
+</pre><br>
+
+<p><strong>Math.sin(x)</strong></p>
+<pre>
+	Ví dụ : trả về sin (giá trị từ -1 đến 1) của góc x (được tính bằng radian).
+Nếu bạn muốn sử dụng độ thay vì radian, bạn phải chuyển đổi độ sang radian:
+--Góc tính theo radian = Góc tính theo độ x PI / 180.
+	document.getElementById("demo").innerHTML = Math.sin(90 * Math.PI / 180);     // returns 1 (the sine of 90 degrees)
+</pre><br>
+
+
+<p><strong>Math.cos(x)</strong></p>
+<pre>
+	Ví dụ : trả về cosin (giá trị từ -1 đến 1) của góc x (được tính bằng radian).
+Nếu bạn muốn sử dụng độ thay vì radian, bạn phải chuyển đổi độ sang radian:
+--Góc tính theo radian = Góc tính theo độ x PI / 180.
+	document.getElementById("demo").innerHTML = Math.cos(0 * Math.PI / 180);     // returns 1 (the cos of 0 degrees)
+</pre><br>
+
+
+<p><strong>Ngẫu nhiên tích hợp</strong></p>
+<pre>
+	Ví dụ : Hiển thị 1 số ngẫu nhiên từ 1-10
+		< button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,10)">Click Me</ button>
+		< p id="demo"></ p>
+		< script>
+		function getRndInteger(min, max) {
+		  return Math.floor(Math.random() * (max - min + 1) ) + min;
+		}		</ script>
+</pre><br>
+
+
+<p  class="title_1"><strong>Toán tử điều kiện</strong></p>
+<pre>
+	Ví dụ : 
+	< input id="age" value="" />
+	< button onclick="myFunction()">Try it < /button>
+	< p id="demo">< /p>
+	< script>
+	function myFunction() {
+	  var age, voteable;
+	  age = document.getElementById("age").value;
+	  voteable = (age < 18) ? "Vị thành niên":"Thành Niên";
+	  document.getElementById("demo").innerHTML = voteable + " Kìa :)";
+	}	< /script>
+</pre>
+	<input id="age" value="18" type="number" />
+	<button onclick="my1001()">Try it</button><br>
+	 <p> Bạn là : <span id="1001"></span></p>
+	<script>
+	function my1001() {
+	  var age, voteable;
+	  age = document.getElementById("age").value;
+	  voteable = (age < 18) ? "Vị thành niên":"Thành Niên";
+	  document.getElementById("1001").innerHTML = voteable + " Kìa :)" ;
+	}	</script><br>
+
+
+
+
+<p  class="title_1"><strong>Toán tử điều kiện</strong></p>
+<pre>
+	Ví dụ : Hiển thị lời chào vào từng móc time 
+		< p id="demo">Good Evening!</ p>
+		< script>
+		if (new Date().getHours() < 12) {
+		  document.getElementById("demo").innerHTML = "Good morning !";
+		}if (new Date().getHours() < 18){
+		  document.getElementById('demo').innerHTML = 'Good afternoon!';
+		}else {
+		  document.getElementById('demo').innerHTML = 'Good evening!';
+		}	< /script>
+</pre>
+		<p><strong> Câu chúc thay đổi theo thời gian tôi lập :)<span id="demo"></span></strong></p>
+		<script>
+		if (new Date().getHours() < 10) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 5h !";}
+		if (new Date().getHours() < 10) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 6h !";}
+		if (new Date().getHours() < 10) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 7h !";}
+		if (new Date().getHours() < 10) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 8h !";}
+		if (new Date().getHours() < 10) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 9h !";}
+		if (new Date().getHours() < 10) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 10h !";}
+		if (new Date().getHours() < 11) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 11h!";}
+		if (new Date().getHours() < 12) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 12h !";}
+		if (new Date().getHours() < 13) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 13h !";}
+		if (new Date().getHours() < 14) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 14h!";}
+		if (new Date().getHours() < 15) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 15h !";}
+		if (new Date().getHours() < 16) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 16h!";}
+		if (new Date().getHours() < 17) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 17h !";}
+		if (new Date().getHours() < 18) {
+		  document.getElementById("demo").innerHTML = " Bây giờ là : 18h !";
+		}else {
+		  document.getElementById('demo').innerHTML = 'Good evening!';
+		}	</script>
+
+
+
+
+
+<p  class="title_1"><strong>Switch</strong></p>
+<pre>
+	Ví dụ : Hiển thị hôm nay thứ mấy?
+	< script>
+	var day; 
+		switch (new Date().getDay()) {
+		  case 0:
+		    day = "Chủ Nhật";
+		    break;
+		  case 1:
+		    day = "Thứ hai";
+		    break;
+		  case 2:
+		     day = "Thứ ba";
+		    break;
+		  case 3:
+		    day = "Thứ Tư";
+		    break;
+		  case 4:
+		    day = "Thứ năm";
+		    break;
+		  case 5:
+		    day = "Thứ sáu";
+		    break;
+		  case 6:
+		    day = "Thứ bảy";
+		}
+		document.getElementById("demo").innerHTML = "Today is " + day;
+	</ script>
+</pre>
+		<p id="demo1121" style="font-weight: 600; color: green;"></p>
+		<script>
+		var day;
+		switch (new Date().getDay()) 
+		{
+		  case 0:
+		    day = "Chủ Nhật";
+		    break;
+		  case 1:
+		    day = "Thứ hai";
+		    break;
+		  case 2:
+		     day = "Thứ ba";
+		    break;
+		  case 3:
+		    day = "Thứ Tư";
+		    break;
+		  case 4:
+		    day = "Thứ năm";
+		    break;
+		  case 5:
+		    day = "Thứ sáu";
+		    break;
+		  case 6:
+		    day = "Thứ bảy";
+		        break;
+		  default:
+		    day = "Unknown";
+		}
+		document.getElementById("demo1121").innerHTML = "Hôm Nay là : " + day;
+		</script>
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+<p class="title_1">.addEventListener() : Thêm sự kiện / hàm vào 1 cái gì đó </p>
+<p>Ví dụ : document.getElementById("myInput").addEventListener("input", myFunction);
+	<br>
+Thêm thẻ input 1 function tên là myfuntion</p>
+
+
+</div>
+</body>
+</html>

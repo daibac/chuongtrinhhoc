@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 20px;
+	background-color: #0000001c;
+}
+.container{
+	margin: 0 auto;
+	width:1200px;
+}
+h2{text-align: center;}
+
+.title_1{	
+    color: red;
+    font-size: 25px;
+}

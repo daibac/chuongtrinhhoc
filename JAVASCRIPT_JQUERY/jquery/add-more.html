@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery căn bản</title>
+	<meta charset="utf-8">
+	<meta name="author" content="đại phú">
+	<meta name="descoription " content="jquery">
+	<meta name="keyword" content="jquery">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="#; url=#">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="jquery/jquery341.js"></script> <!--ddaay laf file chua ma nguon js dow ve or link trang chu-->
+	<script type="text/javascript" src="jquery/and-more.js"></script>
+</head>
+<body>
+
+<div>
+	<h1 >Form lấy thông tin người dùng</h1>
+	<p>Người dùng có thể bổ sung nhiều sở thích </p>
+	<p>Lấy thông tin ng dùng: dối vs PHP cần thêm [] vào sau name trang thẻ li </p>
+	<p>Vs jquery thì chúng ta tạo 1 ô in put hidden xuer lý, lấy tất cả giá trih input và luu vào biến hidden đó</p>
+	<form method="GET"class="myform" id="test-form" action="https://script.google.com/macros/s/AKfycbxYN9JGUhiBrSfqnFznu8AVgoW1OY_yYAPk_2_ToGpZ2RhBCbE/exec" >
+		<table border="1" cellpadding="10" cellspacing="0" class="table-and-more">
+			<tr>
+				<td>FullName :  </td>
+				<td><input type="text" name="fullname" class="fullname" placeholder="fullname"> </td>
+			</tr>
+			<tr>
+				<td>Hobby : </td>
+				<td>
+					<ul class="hobby-list">
+						<li>
+							<input type="text" name="hobby-num" class="hobby" placeholder="hobby">
+							<span class="delete">X</span>
+						</li>
+					</ul>
+					<input type="hidden" name="hobby" value=""><br>
+					<span class="add">Add</span>
+					<span class="delete-all">Delete All</span>
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Email:
+				</td>
+				<td>
+					<input type="email" name="email" placeholder="nhập email" required>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<input type="submit" name="submit" value="submit" id="submit-form">
+	</form>	
+</div>
+
+</form>
+<p>Sheet1: https://script.google.com/macros/s/AKfycbxYN9JGUhiBrSfqnFznu8AVgoW1OY_yYAPk_2_ToGpZ2RhBCbE/exec</p>
+<p>Sheet2: https://script.google.com/macros/s/AKfycbyoJFlbsT1yB8kPSI3nBco86d2j7iptcma1QrcOZabPLQEM7YA_/exec</p>
+
+</body>
+</html>

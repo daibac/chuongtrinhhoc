@@ -1,0 +1,157 @@
+
+body {
+	width: 960px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: black;
+}
+
+#head {
+	background-color:red;
+
+}
+#head2 {
+	background-color: blue;
+	color:green;
+}
+#head ul ul > p{
+	background-color: green;
+}
+/* 
+	
+	background-image: url("A:/Users/GreenSystem/Desktop/php/CThocphp/HTML_CSS/image/bg2.jpg");
+	text-align: ;
+	background-size:cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+*/
+
+
+
+#boder {
+	background-color: #c4c4c4;
+	width:200px;
+	height:200px;
+}
+#child {
+	background-color: yellow;
+	width:50%;
+	height: 50%;
+}
+#pt {
+	background-color: black;
+	width:72pt;
+	height: 72pt;
+	color: yellow;
+}
+#em {
+	font-size: 20px;
+	background-color: green;
+}
+#child-em {
+	width: 4em;
+	height: 4em;
+	background-color: yellow;
+}
+
+
+
+#header {
+	 background-color: #CCFF99;
+	 padding: 10px 25px;
+
+}
+#content {
+	width: auto;
+	height: 1000px;
+	background-color: #c4c4c4;
+}
+#content-left {
+	background-color: #FFCC66;
+	width: 596px;
+	float: left;
+	padding: 1em;
+
+}
+#sidebar {
+	background-color: #99CC33;
+	width: 300px;
+	float: right;
+	padding: 1em;
+}
+#footer {
+	background-color: #FF9966; 
+	padding: 1em; 
+	height: auto;
+	text-align: center;
+	clear: both;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+#align {
+	text-align: left;
+}
+#align1 {
+	text-align: right;
+}
+#align2 {
+	text-align: center;
+}
+#align3 {
+	text-align: justify;
+}
+#decoration {
+	text-decoration: overline;
+}
+#decoration1 {
+	text-decoration:underline ;
+}
+#decoration2 {
+	text-decoration: line-through;
+}
+#decoration3 {
+	text-decoration: one;
+}
+#indent {
+	text-indent:100px;
+}
+#indent1 {
+	text-indent:-100px;
+}
+#shadow {
+	text-shadow:red 1px 1px 30px;
+}
+#shadow1 {
+	text-shadow:red 1px 1px 30px, blue 1px 1px 15px;
+}
+#transform {
+	text-transform:capitalize;
+}
+#transform1 {
+	text-transform : uppercase;
+}
+#transform2 {
+	text-transform:lowercase ;
+}
+#transform3 {
+	text-transform: normal ;
+}
+#family {
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+#font-style1 {
+	font-size: 20px;
+	font-style: italic;
+}
+#font-weight {
+	font-size: 20px;
+	font-weight: bold;
+}
+#font-weight1 {
+	font-size: 20px;
+	font-weight: 900;
+}

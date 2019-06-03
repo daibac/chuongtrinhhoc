@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button type="button" onclick="rePlay()">Click here</button>
+    <p id="demo"></p>
+    <script>
+        var x = 15;
+        function rePlay(){
+if(x !=0 ){
+            document.getElementById("demo").innerHTML = x--;
+            setTimeout(rePlay, 1000);
+        } else
+{
+alert('hết time');
+}
+
+}
+    </script>
+</body>
+</html>

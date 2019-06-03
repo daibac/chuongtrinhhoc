@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body {
+	color: #000;
+	background:url('../images/bg.jpg');
+	padding: 20px 10px;
+}
+.text-center{ text-align: center; }
+a { text-decoration: none; }
+a:link { color: #228B22; }
+a:visited { color: red; }
+a:hover { color: yellow; background: gray; }

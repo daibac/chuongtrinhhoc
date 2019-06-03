@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body {
+	color: #000;
+	background: url('../images/bg.jpg');
+	padding: 15px;
+	font-size: 16px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.text-center{ text-align: center; }
+a { text-decoration: none; }
+h1 { font-weight: 600;	text-transform:uppercase;
+ text-shadow: -3px 0px 1px red, -6px 1px 1px #FFEB3B; }

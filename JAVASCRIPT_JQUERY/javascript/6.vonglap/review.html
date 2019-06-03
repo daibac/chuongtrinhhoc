@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title> Review javascript</title>
+	<meta charset ="utf-8" />
+	<meta name="author" content="Dại Phú" />
+	<meta name="description" content=" học Javascript" />
+	<meta name="keywords" content=" Javascript " />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="refresh" content="#;url=#" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<scrip type="text/javascript" src="js/js.js"></scrip>
+</head>
+<body>
+	<h1>Review javascript</h1>
+	<h2><a href="../index.html" title="javascript" alt="javascript"> trang Javascript</a></h2>
+	<h3>Bài tập Review </h3>
+			<div>
+			<h3>Số lớn nhất số nhỏ nhất</h3>
+
+				// Hai biến lưu min và max
+				<script>
+					var min = null;
+				var max = null;
+				 
+				// Biến lưu giá trị người dùng nhập vào
+				var value = '';
+				 
+				// trong khi người dùng chưa nhấn Hủy 
+				// vì người dùng nhấn hủy tức là value = null,
+				// thì sẽ dừng vòng lặp
+				while (value != null)
+				{
+				    // Lấy giá trị
+				    value = prompt("Nhập số, nếu muốn dừng thì bấm cancel");
+				     
+				    // Nếu người dùng nhấn hủy thì không thực thi những đoạn code bên trong
+				    if (value != null)
+				    {
+				        // Nếu nhập lần đầu thì gán cả hai min và max bằng value
+				        if (min == null){
+				            min = value;
+				            max = value;
+				        }
+				        else
+				        {
+				            // ngược lại sẽ kiểm tra gán min và max
+				            if (min > value){
+				                min = value;
+				            }
+				            if (max < value){
+				                max = value;
+				            }
+				        }
+				    }
+
+				}    
+				 
+				// In ra trình duyệt
+
+				document.write("<br> Min là : " + min +"<br> Max là : " + max);
+			</script>
+
+			
+
+			<!-- 
+			<script type="text/javascript">
+				var max= null;
+				var min=null;
+				var number='';
+				while(number != null)
+				{
+					number= prompt("Vui lòng nhập dãy số các bạn muốn, chúng tôi sẻ tìm số lớn nhất và nhỏ nhất cho bạn");
+					if (number == ""){
+						min = 0;
+						max = 0;
+						alert("nhập lại");
+					}
+					if (number!=null)
+					{
+						if (min == null){
+						max=number;	.
+
+						min=number;
+						}
+					else {
+						
+							if  (min > number){
+								min = number ;
+							}
+							if (max < number){
+								max = number;
+							}
+						}
+					}
+				}
+				document.write("Số nhỏ nhất : " + min + "<br> Số lớn nhất : " + max);
+			</script>
+		-->
+		</div>
+	<img src="images/review.jpg">
+	<div class="baitap">
+		<div class="bt1-2">
+				<div class="bt1">
+					<br>
+					<p><b>Bài tập 1 </b></p>
+					<br>
+					<script type="text/javascript">
+						for ( var i = 0; i <= 9; i++){
+							var str = "" ;
+							for ( var j = i + 1; j<=9; j++){
+								str += j + "&ensp;";
+							}
+							document.write(i + "&ensp;" + str  + "<br>")
+						}
+					</script>
+				</div>
+
+				<div class="bt2">
+					<br>
+					<p><b>Bài tập 2 </b></p>
+					<br>
+					<script type="text/javascript">
+
+						//cách 1 				
+						var i;
+						var n= 9;
+						var str = "" ;
+						for(i = 0 ; i <= n; i++){
+							var j = 0;
+							var space = "";
+							while (j<n-i){
+								space +="&ensp;&ensp;";
+								j++;
+							}
+							if (i==0) str = i.toString();
+							else str = i + "&ensp;" + str + "&ensp;" + i;
+							document.write(space + str + "<br>");
+						}
+						
+						
+					</script>
+				</div>
+		</div>
+
+		<p>Viết bt2 ngắn gon lại 1 tý</p>
+		<div><script type="text/javascript">
+
+				//cách 2 viet ham goi cho don gian			
+				var i;
+				var n= 9;
+				var str = "" ;
+					
+
+				function printX(n){
+					var result = "";
+					for(i = 0 ; i <= n; i++){
+						var j = 0;
+						var space = "";
+						while (j<n-i){
+							space +="&ensp;&ensp;";
+							j++;
+						}
+						if (i==0) str = i.toString();
+						else str = i + "&ensp;" + str + "&ensp;" + i;
+						result += space + str + "<br>";
+					}
+					return result;
+				}
+				var text = printX(9);
+				document.write(text);	
+			</script>
+			<br><br>
+		</div>
+		<div>
+			<h3> Tim nghiem x voi phuong trinh bac 1: ax +b =0</h3>
+			<p>Cách 1 tự suy luận ra</p>
+			<script type="text/javascript">
+				var a = 5;
+				var b = 0;
+				var x;
+				document.write( "a = " + a + "<br>");
+				document.write( "b = " + b + "<br>");
+				if (a==0){
+					if(b==0){ document.write(a + "*x" + "+" + b + " = 0 " + " Có vô số nghiệm." );}
+						else {document.write(a + "*x" + "+" + b + " = 0 " + " phương trình vô nghiệm.");}
+				}else 
+					if(b==0) {document.write(a + "*x" + "+" + b + " = 0 " + " Có nghiệm là : x = 0 ")}
+						else {document.write(a + "*x" + "+" + b + " = 0" + " Có nghiệm là : x = -b/a = " + -b/a );}
+			</script>
+			<br><br><br>
+			<p>Cách 2 làm theo trên mạng </p>
+			<script type="text/javascript">
+				function ptbac1(a,b){
+					if(a==0 && b==0){ document.write("Phương trình vô nghiệm."); }
+					else if (a==0 && b!=0){ document.write("Pgương trình vô nghiệm."); }
+					else if(a!=0 && b==0) { document.write("Phương trình có nghiệm x = 0");}
+					else {document.write ("Phương trình có nghiệm là: -b/a = " + (-b/a));}
+				}
+				ptbac1(2,5);
+			</script>
+		</div>
+
+		<div>
+			<h3> Xác định số người dùng nhập vào có phải là số chínhphương hay không? </h3>
+			<script type="text/javascript">
+				function soChinhPhuong(a){
+					if( Math.sqrt(a)%1 == 0){ 
+						document.write(a + " Là số chính phương<br>");
+					}else { document.write(a + " Không phải là số chính phương<br>");
+				}
+				
+			}
+				soChinhPhuong(400);
+				soChinhPhuong(36);
+				soChinhPhuong(10);
+				soChinhPhuong(3);
+
+
+			</script>
+
+		</div>
+
+
+
+		<div>
+			<h3>In các số lẻ từ 1-10</h3>
+			<script type="text/javascript">
+				var a=1;
+				n=10;
+				document.write("N = " + n)
+				for (a=1; a<=n;a+=2){
+					document.write( "<br>" + a );
+				}
+
+			</script>
+		</div>
+
+		<div>
+			<h3>In các số chẵn từ 0-10</h3>
+			<script type="text/javascript">
+				var a=0;
+				n=10;
+				document.write("N = " + n)
+				for (a=0; a<=n;a+=2){
+					document.write( "<br>" + a );
+				}
+
+			</script>
+		</div>
+
+
+
+
+
+		<div>
+			<h3> in bảng cửu chương của 1 số</h3>
+			<script type="text/javascript">
+				var b = 8;
+				var a = 1;
+				for (x=b; x<=(b*10); x+=b){
+				document.write( b + "&ensp; * &ensp;" + a++ + "&ensp; = &ensp;" + x + "<br>");}
+			</script>
+		</div>
+
+
+		<div>
+			<h3>Bảng cửu chương 1 - 10 </h3>
+			<table id='cc'>
+				<script type="text/javascript">
+					var a = 1;
+					var b ;
+					console.log( cc);
+					var text=str="";
+					for ( a =1 ; a<=10 ; a+=1){
+						text += '<tr>';
+						str='';
+						for( b = 1; b <=10 ; b++){
+							str += '<td>' + a*b + '</td>'
+						}
+						text += str;
+						text += '</tr>';
+					}
+					document.write( text);
+
+				</script>
+			</table>
+				<style>
+					#cc td{
+						padding: 5px 20px;
+					}
+				</style>
+		</div>
+
+
+
+		<div>
+			
+		</div>
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+	</div>
+</body>
+</html>

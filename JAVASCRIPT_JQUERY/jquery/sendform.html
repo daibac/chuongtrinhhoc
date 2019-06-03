@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Form send google sheet</title>
+	<meta charset="utf-8">
+	<meta name="author" content="đại phú">
+	<meta name="descoription " content="form">
+	<meta name="keyword" content="form">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="#; url=#">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="jquery/jquery341.js"></script> <!--ddaay laf file chua ma nguon js dow ve or link trang chu-->
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+
+	   var submit = $("button[type='submit']");
+	   submit.click(function(){
+	          var data = $('form #test-form').serialize();
+	          
+	          var email = ('#email');
+		        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		        if (!filter.test(email.value)) {
+		            alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+		            email.focus;
+		            return false;
+		        }
+		        else
+		        {
+		            return true;
+		        }
+	          $.ajax({
+	                type : 'GET', 
+	                url : 'https://script.google.com/macros/s/AKfycbyoJFlbsT1yB8kPSI3nBco86d2j7iptcma1QrcOZabPLQEM7YA_/exec',
+	                dataType:'json',
+	                crossDomain : true,
+	                data : data,
+	                success : function(data) { 
+	          			if(data == 'false') {
+	                     alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
+	                  	}else{
+	                     alert('Đã thêm dữ liệu vào Form');
+	               	 }
+	       		}
+		    });
+		    return false;
+		   });
+		 });
+	</script>
+</head>
+<body>
+	<form id="test-form" method="GET" action="https://script.google.com/macros/s/AKfycbyoJFlbsT1yB8kPSI3nBco86d2j7iptcma1QrcOZabPLQEM7YA_/exec">
+   <input type="text" name="fullname" placeholder=" full name"/><span>Fullname</span><br>
+   <input type="text" name="hobby" placeholder="sở thích"/><span>sở thích</span><br>
+   <input  type="email" name="email" placeholder="email"id="email" required /><span>Email</span><br>
+   <button type="submit"id="submit-form">Gửi</button>
+</form>
+
+</body>
+</html>

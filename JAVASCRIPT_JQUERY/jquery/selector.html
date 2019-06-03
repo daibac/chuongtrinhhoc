@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery căn bản</title>
+	<meta charset="utf-8">
+	<meta name="author" content="đại phú">
+	<meta name="descoription " content="jquery">
+	<meta name="keyword" content="jquery">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="#; url=#">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="jquery/jquery341.js"></script>
+	<script type="text/javascript" src="jquery/app.js"></script>
+</head>
+<body>
+
+<div>
+	<h1 >tìm hiểu  selector</h1>
+	<p>onload trong javascrip có đạng : window.onload = function(){ ... } ;</p>
+	<p>onload trong jquery: $(document).ready(function(){ ... }) ; </p>
+	<p>Document la đối tượng chứa toàn bộ các thẻ html </p>
+	<p>=> toàn bộ các thẻ html đẫ sẵn sàng thì chạy onload</p>
+	<h2>Thẻ chọn</h2>
+	<h3> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;*</h3>
+	<p>Chon tất cả các thẻ trong HTML.</p>
+	<p>VD : $ ('*').css('background', 'gray');</p>
+	<p>ở đây chọn tất cả thẻ và đặt background cho tất cả ! </p><br><br>
+
+	<p>Sử dụng  cho thẻ nào đó ( chọn thẻ có class là list và gán backg cho tất cả các thẻ bên trong):<br>
+	$('.list *').css('background','green');</p>
+	<p>Kiểm tra các giá trị bên trong của 1 đối tượng bất kỳ( chỉ tác dụng hiển thị trên console ):<br>
+	console.log(li);</p>
+	<h2>Ví dụ </h2>
+	<h3>In ra thông tin tất cả đoạn text trong thẻ ul</h3>
+	<ul class="list">
+		<li><a href="#">HTML</a></li>
+		<li><a href="#" class="list-li">CSS</a></li>
+		<li><a href="#" id="list-li">JAVASCRIPT</a></li>
+		<li><a href="#">JQUERY</a></li>
+		<li><a href="#" title="ajax">AJAX</a></li>
+		<li><a href="#">FRAMEWORK</a></li>
+	</ul>
+	<div><br>
+		<p>Muốn in ra chổ nào thì để 1 thẻ có id hoặc class, sau đó trong jquery gọi hàm có id / class đó và in ra. Phía dưới khai báo class="result", trong jaquery :	$('.result').html(content); trong đó content là hàm đã được tôi code để lấy dữ liệu .  </p><br>
+	</div>
+	<div class="result "></div>
+	<div>
+		<br>
+		<p>$(document).ready(function(){ }</p>
+		<p>Trong đó: document : cchuwas toàn bộ thẻ trong HTNL</p>
+		<p> .ready : toàn bộ thẻ trong HTNL đã săng sàng, đẫ thực hiện hết.!</p>
+		<br>
+	</div>
+
+</div>
+
+
+
+</body>
+</html>

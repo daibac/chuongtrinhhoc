@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Tạo form nhập liệu</title>
+	<meta charset="utf-8" />
+	<meta name="author" content="đại phú" />
+	<meta name="description" content="đây là bài học về tạo form" />
+	<meta name="keywords" content="form, tạo form, tạo form trong html "/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="refresh" content="#;url=#"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+<body background="img6.jpg">
+<a href="1.title.html" title="trang title" target="_Self">trang title</a>
+
+<form action="1.title.html" method="post" name="dangnhap" >
+	Uername: <input type="text" name="uername" required /> <br>
+	Password: <input type="password" name="password" id="#" minlength="4" maxlength="8"  required /> <br>
+	<!- 	minlength="4" tối thiểu 4 ký tự
+			maxlength="8" tối đa 8 ký tự.
+	->
+	<input type="submit" value="Gữi đi" name="submit"/>
+</form>
+	
+
+<hr>
+
+<form action="#" method="post" name="test" enctype="multipart/form-data">
+	<textarea name="info " > </textarea> </br>
+
+	<input type="date" name="date" id="date" step="5"/>
+		<label for="date">date</label></br>
+
+	<input type="datetime-local" name="datetime-local" id="datetime-local">
+		<lable for="datetime-local">date and time</lable></br>
+
+	
+	<input type="checkbox" name="checkbox" id="checkbox">
+		<label for="checkbox">check box</label></br>
+
+		<label for="formmonth"> month</label>
+		<input type="month" mame="formmonth" id="formmonth" ><p></p>
+
+		<p>Thẻ name="cùng tên" thì chọn 1 trg 3</p>
+		<label for="formradio">Radio</label>
+		<input type="radio" id="formradio" name="formradio" value="formradio" checked><p></p>
+
+		<label for="formradio2">Radio2 </label>
+		<input type="radio" id="formradio2" name="formradio"><p></p>
+
+		<label for="formradio3">Radio3</label>
+		<input type="radio" id="formradio3" name="formradio"><p></p>
+
+		<label for="formradio4">Radio4</label>
+		<input type="radio" id="formradio4" name="formradio"><p></p>
+
+
+
+	
+	<input type="color" id="colorhead" name="colorhead" value="#c4c4c4">
+		<label for="colorhead">Color Head</label></br>
+	<input type="color" id="colorbody" name="colorbody" value="#FF00FF">
+		<lable for="colorbody">Color Body</lable></br>
+
+
+
+	<input type="email" name="email" id="email" size="30"  value="chỉ đọc" readonly>
+		<lable for="email"> nhập email</lable>
+	</br><p></p>
+
+
+	<hr>
+	
+	<label for="file">Chọn tệp:</label>	
+	<input type="file" id="file" name="file" accept=".doc, .docx, .mp3, .mp4, .jpg, jepg, .png">
+	<!-		accept="..." 	lọai tệp đc phép chọn(image/  video/  audio/  )
+			capture="..." 	chon máy ảnh hoặc micro
+			file="..."		liệt kê moi têp dc chon
+			multiple="..."	chon nhiều hơn 1 tệp
+
+			audio/ * có nghĩa là "bất kỳ tệp âm thanh".
+			video / * có nghĩa là "bất kỳ tệp video".
+			image / * có nghĩa là "bất kỳ tập tin hình ảnh".
+	->
+
+	</br><label for="multiple"> chon tệp nào</label>
+	<input type="file" id="multiple" name="multiple" capture>
+	</br><p></p>
+	<hr>
+
+
+	<label for="opencamera"> opencamera sử dụng hàm này, nhưng sao k chạy để qua máy khác chạy xem sao</label>
+	<input type="file" name="camera" id="opencamera" accept="video/*;capture=camcorder"></br>
+
+
+	<label for="">Hidden : Một điều khiển không được hiển thị nhưng có giá trị được gửi đến máy chủ. </label>
+	<input type="hidden" name="formhidden" id="formhidden"> </br>
+
+
+	<label for="image"><sub>Graphical</sub><sup> làm nút buttom đẹp</sup></label>
+	<input type="image" name="formimage" id="formimage" alt="nut có hình ảnh" src="image/img5.png" width="70" height="20"></br>
+
+<p></p><hr>
+	<label for=""> reset :bấm vao reset thì trong o nhập text sẻ bị xóa </label>
+	<input type="text" name="" id=""/>
+	<input type="reset" value="reset" name="formreset" id="formreset" />
+	<p></p>
+	
+
+
+
+
+
+
+			<hr>
+			<label>
+			<input type="range" name="rangetext" list="listrange" >
+			<datalist id="listrange">
+			  <option value="0" label="0%">
+			  <option value="10">
+			  <option value="20">
+			  <option value="30">
+			  <option value="40">
+			  <option value="50" label="50%">
+			  <option value="60">
+			  <option value="70">
+			  <option value="80">
+			  <option value="90">
+			  <option value="100" label="100%">
+			</datalist>
+			</label>
+		</br>
+	<input type="submit" value="gữi đi" name="submit" />
+
+</form>
+
+<form>
+	<label for="formsearch">Search</label>
+	<input type="search" id="formsearch" name="formsearch" aria-label="search through site content">
+	<button> search </button>
+</form>
+<input >
+
+
+<br>
+<div>
+	<footer id="footer">
+		<address>
+			Email: <a href="mailto:daiphu13i2@gmail.com"> Gữi mail ngay</a><br>
+			Địa Chỉ: Cam Lộ - Quảng Trị.<br>
+			SDT: 0364197995.<br>
+		</address>
+	</footer>
+</div>
+
+</body>
+</html>

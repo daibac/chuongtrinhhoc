@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery căn bản</title>
+	<meta charset="utf-8">
+	<meta name="author" content="đại phú">
+	<meta name="descoription " content="javasctipt">
+	<meta name="keyword" content="javascript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="#; url=#">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="jquery/jquery341.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+	<h1 style="text-align:center;">Title</h1>
+	<div>
+		<div class="title" >
+			<h2 style="text-align:center;">Lấy nội dung</h2>
+		</div>
+		<p>Cú pháp : var " tên biến " = $('class/id').text()/,html() ;</p>
+		<p>.text();  : Chỉ lấy nội dung chử k có định dạng</p>
+		<p>.html();  : Lấy nội dung chử kèm theo định dạng</p>
+		<p>Hàm này là hàm lấy nội dung và cũng là hám gán nội dung</p>
+	</div>
+	<script type="text/javascript">
+		var title = $('.title').text();
+		document.write(" Lấy dòng h2 không có định dạng bằng ,text();<br>" + title);
+
+		var title2 = $('.title').html();
+		document.write(" <br>Lấy dòng h2 có định dạng bằng ,html();<br>" + title2);
+	</script>
+
+
+	<div class="title3">
+		<h2> Dùng hàm thay thế nội dung này</h2>
+	</div>
+		<p>Cú pháp thay thế là: var title3 = $('.title3').html( "<i>Nội Dung này Đã Bị Thay Thế.</i>");</p>
+		<p>thêm bội dung vào trong thẻ html(noi dung) or text(noi dung)</p>
+	<script type="text/javascript">
+		var title3 = $('.title3').html( "Nội Dung này Đã Bị Thay Thế.");
+		document.write(" <br>Lấy dòng h2 có định dạng và gán nd mới vào chín dòng đó :<br>" );
+	</script>
+
+	<div>
+		<h2 class="vidu">Ví dụ -Bấm vào đây-</h2>
+		<form method="post" action="">
+			<input type="text" name="text" value="viết  clickme xem!" placeholder=" Viêt vào đây" class="text"/>
+			<input type="submit" name="submit" value="click here" class="clickhere"/>
+			<p>trong form, lấy dữ liệu k phải =.text() / .html() . Thay vào đó là: .val()</p>
+			<p> lấy dữ liệu trong biến value để hiển thị lên popup</p>
+			<p>Cú pháp của id và class ở trên ta có thể sủ dụng tương tự trên CSS (id cha id con thẻ p : #id #child p)</p>
+		</form>
+		<script type="text/javascript">
+			$('.clickhere').click(function(){
+				var message = $ ('.text').val();
+				alert(message);
+			})
+		</script>
+		<script type="text/javascript">
+			$('.vidu').click(function(){
+				alert('Nhìn chi nhìn? Tin người vkl!');
+			})
+		</script>
+	</div>
+
+</body>
+</html>

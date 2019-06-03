@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lag="vi">
+<head>
+	<title> Review Html</title>
+	<meta charset="utf-8" />
+	<meta name="author" 		content="đại phú" />
+	<meta name="description " 	content="review, html"/>
+	<meta name="keyword" 		content="review , html, tổng hợp html"/>
+	<meta name="viewport"		content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="refresh "	content="200;url=#"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<h1 id="top">h1: Chữ có định dạng lớn nhất </h1>
+	<h2>h2: Chữ có định dạng kế tiếp  </h2>
+	<h3>h3: Chữ có định dạng kế tiếp  </h3>
+	<h4>h4: Chữ có định dạng kế tiếp  </h4>
+	<h5>h5: Chữ có định dạng kế tiếp  </h5>
+	<h6>h6: Định dạng chữa nhỏ nhất   </h6>
+	<a href="#footer" title="cuối trang">xuống footer</a>
+<div>
+	<p  bgcolor="#c4c4c4"> p : Khai báo đoạn ăn bản </p>
+	<p><b>b : Đoạn văn bản được IN ĐẬM </b></p>
+	<p><i>i : Đoạn văn bản được IN NGHIÊNG </i></p>
+	<p><u>u: đoạn văn bản GẠCH CHÂN</u></p>
+	<p><strike>strike: đoạn văn bản GẠCH NGANG</strike></p>
+	<p><sup>sup: đoạn văn bản thành chỉ số trên</sup>Văn bản so sánh</p>
+	<p><sub>sub: đoạn văn bản thành chỉ số dưới</sub>Văn bản so sánh</p>
+	<hr>
+	<pre>
+	<strong ><i><u> pre:</u></i> </strong>Văn bản định dạng giống như đang viết trong word.
+		Dùng cho các trường hợp muốn viết văn bẳn không cần định dạng.
+			Bấm tag để thụt vào như bình thường.
+		có thể dùng để hiển thị code:
+				if a=2 {
+				var b=a*5;
+			}
+	</pre>
+	<p><strong>Hiển trị đoạn trích dẫn, có thể thêm tác giả (sẻ <i>In nghiêng)</i></strong></p>
+	<quote>
+		<p>p:  Không chuẩn bị là chuẩn bị . . . . . .. để thách bại</p>
+		<cite>cite: Đinh thiên tứ </cite>
+	</qoute>
+	<br>
+	<code><u>code:</u>Soạn thảo văn bản về IT $pot[.abc]
+	</code>
+</div>
+<hr>
+<div>
+	<ol type="I">
+		<li>ol ->li: để hiển thị danh sách có sắp xếp.</li>
+		<li>ol ->li: trong OL thêm thuộc tính type="a/A/I" để sắp xếp</li>
+		<li>ol ->li: mặc định là 1 2 3</li>
+	</ol>
+	<ul >
+		<li>ul -> li: để hiển thị danh sách không sắp xếp</li>
+		<li>ul->li: có thể bỏ dấu phía trước bằng css</li>
+		<li>ul->li: </li>
+	</ul>
+	<dl>
+		<dt>dl->dt->dd: cha-> con->mô tả</dt>
+		<dd>dl->dt->dd: danh dách có <u>Mô tả</u></dd>
+		<dt><u>Ví dụ: </u>HTML</dt>
+		<dd>Ngôn ngữ đánh dấu siêu văn bản</dd>
+	</dl>
+</div>
+<hr>
+<div>
+	<h2>Tạo liên kết </h2>
+	<p>Tạo liên kết vào trang khác. dùng thẻ a</p>
+	<p>chuyển đến trang web mình chỉ định hoặc trang trong cùng localhost/ thư mục.</p>
+	<a href="https://www.google.com" title="trang web muốn chuyển" target="_blank"> ở đây là google </a>
+	<p >liên kết neo: là chuyển đến một chổ nào đó trên trang hiện tại </p>
+	<a href="#top" title"đầu trang">Đến đầu trang, trong href thêm dấu #+id, nơi cần đến để id=#id</a>
+</div>
+<hr>
+<div>
+	<h1>Chèn ảnh, video, audio, trang web</h1>
+	<div>
+		<h2>Chèn audio </h2>
+			<audio controls >
+				<source src="sautimthiephong.mp3" title="sầu tím thiệp hồng"> trình duyệt không hỗ trợ
+			</audio>
+	</div>
+	<div>
+		<h2>Chèn âm thanh. thẻ audio->source src"link"</h2>
+			<audio controls autoplay> 
+				<source src="squenemtrongtungcondau.mp3" title="quên em trong từng cơn đau" >
+					trình duyệt không hỗ trợ audio
+			</audio>
+	</div>
+	<div>
+		<h2>Chèn ảnh</h2>
+		<img src="img1.jpg" width="200" height="auto" title="ảnh vú dụ 1" alt="không có ảnh thì hiển thị dòng này">
+		<img src="img.jpg" width="200" height="auto" title="ảnh 2" alt="không có hình">
+	</div>
+	<div>
+		<h2>chèn Video trong máy hoặc trang localhost</h2>
+			<pre>Video->source src"link"
+				trong phần video có thêm :
+						contrls: hiển thị các nút điều khiểu
+						autoplay: nếu muốn khi bật web thì nhạc chạy
+			</pre>
+		<video controls >
+			<source src="video.mp4" title="video đàn piano">
+				trình duyệt không hỗ trợ
+		</video>
+	</div>
+	<div>
+		<h2>Thêm video từ Youtube</h2>
+		<pre>
+			 Vào youtube, chọn video cần thêm vào trang. click chuột phải chọn copy mã nhúng. vào code past là xong
+			 youtube sử dụng thẻ : ifream 
+			 có thể chỉnh sửa kích thước hiển thị trong website
+		</pre>
+			<iframe width="400" height="200" src="https://www.youtube.com/embed/lQ8DhwQ-CMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+	</div>
+	<div>
+		<h2>CHèn trang web</h2>
+		<p>có thể click vào liên kết để trang web đó load</p>
+		<p>vi dụ chèn trang web bất kì. sau đó:<a href="https://thachpham.com/" target="translate">bấm vào đây để qua trang thạch phạm </a></p>
+		<iframe src="https://vietjack.com/html/" width="400" height="500" name="translate">
+		</iframe>
+	</div>
+<hr>
+	<div>
+		<h1>Form</h1>
+		<h2> form đăng ký đăng nhập </h2>
+		<p>Input: thẻ:</p>
+		<p>+> text: nhập text user vvv.... <u>thêm: required .để kt khi ng dùng không nhập gì thì không đc gữi</u></p>
+		<p>+> password: Nhập password , khi nhập chữ bị ẩn <u>thêm: required .để kt khi ng dùng không nhập gì thì không đc gữi</u></p>
+		<p>+> nút submit or button đều có chức năng gữi thông tin lên sever. <u>trên thẻ form có thêm thẻ action="link" metod="post" name=".."</u></p>
+			<form action="#" method="post" name="form-dangnhap">
+					<table>
+						<tr>
+							<td>Usermane:</td>
+							<td><input type="text" title="nhập tên" value="Nhập username" required></td>
+						</tr>
+						<tr>
+							<td>Password:</td>
+							<td><input type="password" title="nhập password" required> </td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td><input type="email" title="nhập Email" value="email@gmail.com"></td>
+						</tr>
+						<tr>
+							<td><input type="submit" value="Gữi thông tin" title="gữi thông tin lên sever"/></td>
+						</tr>
+
+					</table>
+					<input type="submit" value="Gữi thông tin 2" title="gữi thông tin lên sever 2 "/>
+			</form>
+	</div>
+	<hr>
+	<div>
+		<h2>Form date</h2>
+		<form>
+			<lable for="date">form date</lable>
+			<input type="date" title="nhập Ngày tháng" ></br>
+
+			<lable for="datetime">form datetime-local</lable>
+			<input type="datetime-local" title="nhập ngày tháng time" >
+
+
+			<input type="submit" title="gữi đi" value="Gứi đi">
+		</form>
+	</div>
+	<hr>
+	<div>
+		<h2>Radio</h2>
+		<p>Thẻ label: tạo nhãn(click vào chữ giống như vào ô vì có for="id"</p>
+		<p> trong thẻ label đầu tiên có thêm cheked và name="..." ...đại diên cho tất cả thẻ có name là ... vid dụ ở lg có thể chon song song vs các dt khác! 3 cái ở trên chỉ có thể chọn 1 trong 3</p>
+		<label for="sony" name="dienthoai" checked>Sony</label>
+		<input type="radio" value="Sony" id="sony" title="Điện thoại Sony" name="dienthoai" ><br>
+
+		<label for="samsung">Samsung </label>
+		<input type="radio" value="Samsung " id="samsung" title="Điện thoại Samsung" name="dienthoai" ><br>
+
+		<label for="motorola">Motorola </label>
+		<input type="radio" value="Motorola" id="motorola" title="Điện thoại Motorola" name="dienthoai" ><br>
+
+		<label for="lg">Lg</label>
+		<input type="radio" value="LG" id="lg" title="Điện thoại LG" name="..." >
+		<hr>
+	</div>
+	<div>
+		<label> chọn khoảng giá trị 1-100 /1 lần di chuyển sẻ nhảy 20 đon vị(chỉnh trong step</label>
+		<input type="range" title="mặc định 20 chỉnh trong value" value="20" min="0" max="100" step="20" list="range">
+		<datalist id="range">
+			<option value="0" label="0%"></option>
+			<option value="10"></option>
+			<option value="20"></option>
+			<option value="30"></option>
+			<option value="40"></option>
+			<option value="50" label="50"></option>
+			<option value="60"></option>
+			<option value="70"></option>
+			<option value="80"></option>
+			<option value="90"></option>
+			<option value="100" tabel="100%"></option>
+		</datalist>
+ 	</div>
+ 	
+
+ 	<hr>
+ 	<div>
+ 	<article>
+		<p>Tin trong ngày</p>
+		<p>Công nghệ ngày càng tiến sâu vào đời sống chúng ta...</p>
+	</article>
+	</div>
+	<hr>
+	<div>
+		<details>
+			<summary>Học HTML<summary>
+			<p>Học từ cơ bản đến nâng cao.</p>
+			<p>Tham khảo những phần liên quan.</p>
+		</details>
+	</div>
+	<hr>
+	<div>
+		<embed src="swf/img1.svg" title="ảnh svg" alt="ảnh bị xóa" width="100"/>
+	</div>
+	<div>
+		<figure>
+			<figcaption>Hình minh họa</figcaption> 
+			<p><img src="img3.jpg" alt="ảnh minh họa" width="100"></p>
+		<figure>
+	</div>
+
+
+
+	<hr>
+	<div align="center">
+		<a href="#top">lên top</a></div>
+		<hr>
+	<div id="footer">
+		<footer>
+			<p>Học web </p>
+			<address>
+				Email: <a href="mailto:daiphu13i2@gmail.com">Click vô đây để gữi mail</a><br />
+				Địa chỉ: Cam Lộ Quảng Trị<br />
+				Điện thoại: 0364197995
+			</address>
+		</footer>
+	</div>
+</body>
+</html>

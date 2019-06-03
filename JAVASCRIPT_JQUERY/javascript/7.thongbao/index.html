@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>thông báo</title>
+
+
+	
+<body>
+
+<h2>Javascript ngày tháng</h2>
+&lt;document.getElementById('date').innerHTML = Date()&gt;<br>
+<button onclick="document.getElementById('date').innerHTML = Date()">
+	Click để hiển thị ngayd tháng.
+</button>
+<div id="date"></div>
+
+
+
+
+
+<h2>Bật tắt bóng đèn</h2>
+<img id="light"src="images/images.jpg">
+<br>
+<button onclick="document.getElementById('light').src='images/green.jpg'">Bật đèn xanh</button>
+<button onclick="document.getElementById('light').src='images/sieuam.jpg'"> bóng đèn siêu âm</button>
+
+
+
+<!-- thay đổi hiển thị dữ klieeuj bằng innerHTML -->
+<p id="demo"> </p>
+<p id="demo1"onclick="demo()">aaaaaaaaaaaaaaaaaaaaaaaa</p>
+<script>
+function demo(){
+document.getElementById("demo").innerHTML =' số '+ ' quá ' + ' lớn '+ '<br>';};
+document.getElementById("demo1").innerHTML = 9999999 * 6565656566;
+</script>
+<hr>
+<h2>Tạo biến , gán giá trị cho biến</h2>
+
+<p id="demon"></p>
+<p id="demon1"></p>
+<p id="demon2"></p>
+<p id="soluong"></p>
+<p id="all"></p>
+<script>
+	var myName = "Phú";
+document.getElementById('demon').innerHTML = myName;
+	var carName = "Volvo";
+document.getElementById("demon1").innerHTML = carName;
+	var myMoto = 'BMW';
+document.getElementById('demon2').innerHTML = myMoto;
+	var soluong = 100;
+document.getElementById('soluong').innerHTML = ' số lượng : ' + soluong;
+document.getElementById('all').innerHTML = myName + ' Sở Hữu ' + soluong + ' chiếc ' + carName + ' và ' + myMoto;
+</script>
+
+
+
+<hr>
+<p>oninput thực hiện cái gì đó khi người dùng nhập.</p>
+
+Viết gì đó :<input type="text" id="myInput" oninput="abc()">
+<p>bạn viết:<span id="abc"></span> </p>
+
+Cửa sổ alert: <input type="text" id="key" oninput="myFt2()">
+
+<br>có thể lấy id và hàm function thêm .oninput<br>
+<input type="text" name="name" id="name-abc" >
+<p>Kết quả : <span id="result-abc"></span></p>
+
+<script>
+function abc() {
+  var x = document.getElementById("myInput").value;
+  document.getElementById("abc").innerHTML = x;
+}
+function myFt2(){
+	alert('bạn vừa nhập gì đó');
+}
+
+document.getElementById("name-abc").oninput = function() {ftabc()};
+function ftabc(){
+	var fabc = document.getElementById('name-abc').value;
+	document.getElementById('result-abc').innerHTML = fabc;
+}
+
+
+</script>
+<hr>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

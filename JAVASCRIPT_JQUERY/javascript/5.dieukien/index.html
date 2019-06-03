@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title> Câu điều kiện trong Javascript </title>
+	<meta charset ="utf-8" />
+	<meta name="author" content="Dại Phú" />
+	<meta name="description" content=" học Javascript" />
+	<meta name="keywords" content=" Javascript " />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="refresh" content="#;url=#" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<scrip type="text/javascript" src="js/js.js"></scrip>
+</head>
+<body>
+	<h1 class="text-center">Các câu điều kiện trong Javascrip</h1>
+	<h2><a href="../index.html" title="javascript" alt="javascript"> trang Javascript</a></h2>
+	<h3>Câu lệnh IF</h3>
+	<p>Dùng để ' thực hiện ' một số mã lệnh  nếu đúng điều kiện đưa ra </p>
+	<script type="text/javascript">
+		var number = -9;
+		document.write("Number có giá trị là : " + number + "<br>");
+		if ( number >=0) { document.write("Số dương");}
+		if ( number < 0) { document.write("Số âm");}
+	</script>
+
+
+
+	<h3>Câu lệnh IF .... ELSE</h3>
+	<p>Dùng để ' thực hiện ' một số mã lệnh  nếu đúng điều kiện đưa ra thì thực hiện lệnh đã định, nếu không đúng điều kiện thì thực hiện lệnh khác.
+	 </p>
+
+	 <script type="text/javascript">
+		var number = 255;
+		document.write("Number có giá trị là : " + number + "<br>");
+		/* if ( number >=0) { document.write("Số dương");}
+			else{ document.write("Số âm"); }
+		*/
+		// thu gon mã nguồn trên
+		if (number >= 0) document.write(number + " Là số dương" )
+			else document.write( number + " Là số âm" );
+
+	</script>
+
+
+	<h3>Câu lệnh IF .... ELSE  IF .... ELSE</h3>
+	<p> Sử dụng câu lệnh điều kiện này trong trường hợp có nhiều điều kiện đặt ra và khi thỏa mỗi điều kiện thì sẻ thực hiện một số mã lệnh khác nhau! </p>
+	<script type="text/javascript">
+		var number = 0;
+		var mesage;
+		if (number > 0 ){
+			message= "Là Số Dương";
+		} else if (number < 0) {
+			message= " Là Số Âm"
+		} else {
+			message= "Là Số 0"
+		}
+		document.write("Giả trị number là " + number + "<br>");
+		document.write(message);
+	</script>
+
+
+	<h3>Câu lệnh SWITCH</h3>
+	<p> Câu lệnh switch có 1 điều kiện mặc định, Nghĩa là khi giá trị đưa vào không thỏa mãn một điều kiện nào thì nó sẻ lấy các câu lệnh trong  phần điều kiện mặc định để thực hiện. </p>
+	<p>Ví dụ 5 tuổi đến 8 tuổi thì in ra lớp, ngoài số tuổi này hiển thị : chưa xác định</p>
+	<script type="text/javascript">
+		var number = 7;
+		var mesage;
+		switch (number) {
+			case  5:
+				message= "<br>Còn học mẫu giáo<br>";
+				break;
+			case  6:
+				message= "<br>Học lớp 1<br>";
+				break;
+			case  7:
+				message= "<br>Học lớp 2<br>";
+				break;
+			case  8:
+				message= "<br>Học lớp 3<br>";
+				break;
+			default :
+				message= "<br> Chưa xác định rỏ<br>";
+		}
+		document.write("<br>Giá trị number là " + number + "");
+		document.write(message);
+	</script>
+	<p>Ví dụ in ra ngày làm việc thứ 2 - thứ 6 , thứ 7 chủ nhật nghĩ </p>
+	<script type="text/javascript">
+		var day = "fri";
+		var mesage;
+		/* switch (day) {
+			case  "mon":
+				message= "<br>Bạn phải đi làm<br>";
+				break;
+			case  "tue":
+				message= "<br>Bạn phải đi làm<br>";
+				break;
+			case  "wed":
+				message= "<br>Bạn phải đi làm<br>";
+				break;
+			case  "thu":
+				message= "<br>Bạn phải đi làm<br>";
+				break;
+			case  "fri":
+				message= "<br>Bạn phải đi làm<br>";
+				break;
+			case  "sat":
+				message= "<br>Bạn được nghĩ<br>";
+				break;
+			case  "sun":
+				message= "<br>Bạn được nghĩ<br>";
+				break;
+			default :
+				message= "<br>Chưa xác định rỏ<br>";
+		}
+		*/
+		// cách viết rút gọn
+		switch (day) {
+			case  "mon":
+			case  "tue":
+			case  "wed":
+			case  "thu":
+			case  "fri":
+				message= "<br>Bạn phải đi làm<br>";
+				break;
+			case  "sat":
+			case  "sun":
+				message= "<br>Bạn được nghĩ<br>";
+				break;
+			default :
+				message= "<br>Chưa xác định rỏ<br>";
+		}
+
+		document.write("<br>Hôm nay là là " + day + "");
+		document.write(message);
+	</script>
+	<h3>Sử dụng câu điều kiện để hoàn thành câu lệnh typeof trong bài biến</h3>
+	<script type="text/javascript">
+		
+
+			var myNumber 	= 5 ;
+			var myString	= "xinchao";
+			var myBoolean 	= true ;
+			var myObject 	= {} ;
+			var myArray	 	= [] ;
+			var myUndefined	= undefined;
+			var myNull 		= null;
+
+
+			function myTypeOf(obj){
+				var type = typeof obj;
+				if(type != "object"){
+					return type;
+				} else if (obj instanceof Array){
+					return "array";
+				}else if(obj == null){
+					return "null"
+				}else {
+					return "object"
+				}
+			}
+
+
+			document.write("<br> Gia tri " + " ' " + myNumber + " ' " +" có kiểu dữ liệu là : " + myTypeOf(myNumber) );
+			document.write("<br> Gia tri " + " ' " + myString + " ' " + " có kiểu dữ liệu là : " + myTypeOf(myString) );
+			document.write("<br> Gia tri " + " '" + myBoolean + " ' " + " có kiểu dữ liệu là : " + myTypeOf(myBoolean) );
+			document.write("<br> Gia tri " + " ' " + myObject + " ' " + " có kiểu dữ liệu là : " + myTypeOf(myObject) );
+			document.write("<br> Gia tri " + " ' " + myArray + " ' " + " có kiểu dữ liệu là : " + myTypeOf(myArray) );
+			document.write("<br> Gia tri " + " ' " + myUndefined + " ' " + " có kiểu dữ liệu là : " + myTypeOf(myUndefined) );
+			document.write("<br> Gia tri " + " ' " + myNull + " ' " + " có kiểu dữ liệu là : " + myTypeOf(myNull) );
+	</script>
+
+
+
+
+
+</body>
+</html>

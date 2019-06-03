@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery căn bản</title>
+	<meta charset="utf-8">
+	<meta name="author" content="đại phú">
+	<meta name="descoription " content="jquery">
+	<meta name="keyword" content="jquery">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="#; url=#">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/abcdef.css">
+	<script type="text/javascript" src="jquery/jquery341.js"></script> <!--ddaay laf file chua ma nguon js dow ve or link trang chu-->
+	<script type="text/javascript" src="jquery/abcdef.js"></script>
+</head>
+<body>
+<div class="container">
+	
+
+	<div>
+		<button id="button" >
+			abcdef
+		</button>
+		<p id="h1">h1</p>
+		<p id="h2">h2</p>
+		<p id="h3">h3</p>
+		<p id="h4">h4</p>
+		<p id="h5">h5</p>
+		<p id="h6">h6</p>
+		<p id="h7">h7</p>
+		<p id="h8">h8</p>
+		<p id="h9">h9</p><br>	
+		<span id="h10"> double-click</span><br>
+		<span id="h11"> mouseenter</span><br>
+		<span id="h12"> hover</span><br>
+		<span id="h13"> mouseleave</span><br>
+	</div>
+	<div>
+		<h3>Các bộ chọn trong Jquery</h3>
+	<pre>	
+	$ ("*") 				Chọn tất cả các yếu tố
+	$ (this) 				Chọn thành phần HTML hiện tại
+	$ ("p.intro") 			Chọn tất cả các phần tử  < p> với class = "intro"
+	$ ("p: first") 			Chọn phần tử < p> đầu tiên
+	$ ("ul li:first") 		Chọn phần tử < li> đầu tiên của < ul> đầu tiên
+	$ ("ul li:first-child") Chọn phần tử < li> đầu tiên của mọi < ul>
+	$ ("[href]") 			Chọn tất cả các thành phần có thuộc tính href
+	$ ("a [target = '_ blank']") Chọn tất cả các phần tử < a> có giá trị thuộc tính đích bằng "_blank"
+	$ ("a [target! = '_ blank']") Chọn tất cả các phần tử < a> có giá trị thuộc tính đích KHÔNG bằng "_blank"
+	$ (": button") 			Chọn tất cả các phần tử < button> và < input> type = "button"
+	$("tr:even")  			Chọn tất cả các phần tử < tr> chẵn
+	$("tr:odd")  			Chọn tất cả các phần tử < tr> lẻ
+
+	</pre>
+	</div>
+	<div>
+		<h3>Các sự kiện trong Jquery</h3>
+		<h4>Sự kiện của chuột</h4>
+		
+			<p class="click border">click</p>
+			<p class="dblclick border">dbclick</p>
+			<p class="mouseenter border">mouseenter</p>
+			<p class="mouseleave border">mouseleave</p>
+			<p class="hover border">hover</p>
+
+		<h4>Sự kiện của Bàn phím < keyboard ></h4>
+		
+			<p><input type="text" name="keypress" class="keypress"> keypress Kết quả : <span class="result-keypress"> </span></p>
+			<p><input type="text" name="keydown" class="keydown"> keydown Kết quả : <span class="result-keydown"> </span></p>
+			<p><input type="text" name="keyup" class="keyup"> keyup Kết quả : <span class="result-keyup"> </span></p>
+		
+		<h4>Sự kiện của Form</h4>
+			<form>
+				<p class="submit border">
+					<input type="submit" value="submit">
+				</p>
+				<p class=" border">change
+					<textarea type="textarea" cols="50" rows="5" class="change"></textarea><br>
+					Sự kiện change() xảy ra khi giá trị của các phần tử như < select> < textarea> < input> bị thay đổi và hết phiên làm việc.
+				</p>
+				<p class="focus border">focus
+					<input type="text" name="focus" class="focus" >
+				</p>
+				<p class="blur border">blur
+					<input type="text" name="blur" class="blur">
+				</p>
+				<p class="focus-blur border">Kết hợp focus + blur
+					<input type="text" name="blur" class="focus-blur">
+				</p>
+			</form>
+		<h4>Sự kiện Tài liệu / Cửa sổ</h4>
+	
+			<p class="click">load
+				1. Load sự kiện javascript.
+				2. load dữ liệu từ server sau đó đặt HTML trở lại từ các thành phần được chọn.
+		<pre>
+	Ví dụ : 
+	< script>
+		$(function(){							nằm trong 1 hàm	
+		    $('img').load(function(){					bộ đc chọn ở đây là img
+		        if($(this).height() > 100) {				nếu img hiện tại có chiều cao lớn hơn 100
+		            $(this).css('border','5px solid blue');		thực hiện lệnh tại phần tử đó thêm css vào
+		        }
+		    })
+		});
+	</ script>
+		</pre>
+			</p>
+
+			<p class="resize">resize
+				khi phần tử bị thay đổi kích thước! thì sự kiện này hoạt động
+				ví dụ: Số lần thay đổi kích thước window<br>
+				<p class="resize-1">0</p>
+			</p>
+
+			<p>Scroll</p>
+			<p class="scroll" style="overflow: scroll; height: 100px;">
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+				scroll <span style="display: none; color: green;"> thực hiện scroll </span> <br>
+
+			</p>
+			<p class="unload">unload</p>
+			<p>Xử lý sự kiện kho tắt hoặc mở link mới</p>
+
+		<h4>on()</h4>
+		<p>Các on()phương pháp gắn một hoặc nhiều xử lý sự kiện cho các yếu tố lựa chọn.</p>
+		<p class="ononon">onononononno</p>
+
+	</div>
+
+</div>
+
+
+</body>
+</html>

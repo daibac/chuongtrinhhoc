@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title> Vòng lặp While</title>
+	<meta charset ="utf-8" />
+	<meta name="author" content="Dại Phú" />
+	<meta name="description" content=" học Javascript" />
+	<meta name="keywords" content=" Javascript " />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="refresh" content="#;url=#" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<scrip type="text/javascript" src="js/js.js"></scrip>
+</head>
+<body>
+	<h1>Vòng lặp While</h1>
+	<h2><a href="../index.html" title="javascript" alt="javascript"> trang Javascript</a></h2>
+	<h3 class="text-center">Vòng lặp while thực hiện một khối lệnh khi điều khiển thỏa và dùng lại ngay khi điều kiện không thỏa</h3>
+	<h4> Ví Dụ: in ra các giá trị chẵn lớn hơn 0 và bé hon ng dùng nhập vào </h4>
+	<script type="text/javascript">
+		var number = 20;
+		var i = 0;
+		document.write("Giá trị người dùng nhập vào là : " + number + "<br>");
+		
+		/* cách 1
+		while ( i <= number){
+			if (i % 2==0){
+				document.write( i + "<br>");
+			}
+			i++;
+		}
+		*/
+		// cách 2 
+		while (i <= number){
+		document.write(i + "<br>");
+			i += 2;
+		}
+	</script>
+
+
+
+	<h4> Ví Dụ: in ra các giá trị sau : 0 01 012 0123 01234 ,.... </h4>
+	<script type="text/javascript">
+		//cách 1 dài dong
+		/*
+		var i = 0;
+		var number = 9;
+		var str;
+		while ( i<= number) {
+			if(i==0) str = i.toString();
+			else str += i.toString();
+			document.write(str + "<br>");
+			i += 1;
+		}
+		*/
+		// cách 2 rút gon hơn
+		// không cần chuyển str về dang string, chon kieu khi khai báo luôn
+		var i = 0;
+		var number = 20;
+		var str = "";
+		while ( i<= number) {
+			str += i;
+			document.write(str + "<br>");
+			i += 1;
+		}
+
+
+
+
+	</script>
+
+</body>
+</html>

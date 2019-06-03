@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body {
+	font-size: 14px;
+	color: #000;
+	line-height: 1.4;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+h1{
+	text-transform: uppercase;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.click-here{
+	font-size: 32px;
+}
+.click-text a:link {color: green; }
+.click-text a:hover {color: white; background: yellow;} 
+/* sau khi click thì link sẻ lấy mặc định của phần visited , vì nó ở sau  */ 
+.click-text a:visited { color: red; }
+.click-text a:focus { color:gray;}
